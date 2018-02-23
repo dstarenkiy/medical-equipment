@@ -1,0 +1,213 @@
+include ./bemto/bemto.pug
+doctype html
+html(lang='ru')
+	include head	
+	body
+		include header
+		+b.swiper-container
+			+b.swiper-wrapper
+				+b.swiper-slide 
+					+e.SPAN.item Уже 50 лет мы обеспечиваем бесперебойную работу медицинской техники
+					+e.IMG(src='/images/slide.jpg', alt='')
+				+b.swiper-slide
+					+e.IMG(src='/images/slide.jpg', alt='')
+		+b.swiper-pagination
+		+b.container.content
+			+e.H4.h4 Ассортимент нашей продукции
+			+b.assortiment
+				+e.column
+					+e.block
+						+e.IMG.image-block(src='/images/massage.png', alt='')
+					+e.block
+						+e.A.caption(href='#') Массажные столы Vernam
+						+e.UL
+							+e.item
+								+e.A(href='#') Складные массажные столы
+							+e.item
+								+e.A(href='#') Аксессуары для массажа
+							+e.item
+								+e.A(href='#') Стационарные массажные столы
+				+e.column
+					+e.block
+						+e.IMG.image-block(src='/images/home.png', alt='')
+					+e.block
+						+e.A.caption(href='#') Товары для дома
+						+e.UL
+							+e.item 
+								+e.A(href='#') Мать и дитя
+							+e.item
+								+e.A(href='#') Тонометры
+							+e.NAV#homemenu_id
+								+e.item
+									+e.A(href='#') Ингаляторы
+								+e.item
+									+e.A(href='#') Коляски инвалидные
+								+e.item
+									+e.A(href='#') Физиотерапевтические аппараты
+						+e.BUTTON.more#more(type='button' onclick="showHide('homemenu_id')") Показать ещё 15 категорий
+				+e.column
+					+e.block
+						+e.IMG.image-block(src='/images/healthy.png', alt='')
+					+e.block
+						+e.A.caption(href='#') Для здоровья и красоты
+						+e.UL
+							+e.item 
+								+e.A(href='#') Аппараты прессотерапии
+							+e.item 
+								+e.A(href='#') Массаж
+							+e.item
+								+e.A(href='#') Разное
+							+e.item 
+								+e.A(href='#') Фитнес
+							+e.item
+								+e.A(href='#') Тренажеры					
+				+e.column
+					+e.block
+						+e.IMG.image-block(src='/images/furniture.png', alt='')
+					+e.block
+						+e.A.caption(href='#') Мебель медецинская
+						+e.UL
+							+e.item
+								+e.A(href='#') Стулья и табуреты
+							+e.item
+								+e.A(href='#') Шкафы медицинские
+							+e.NAV#medicalmenu_id
+								+e.item
+									+e.A(href='#') Ширмы
+								+e.item
+									+e.A(href='#') Кушетки, банкетки
+								+e.item
+									+e.A(href='#') Штативы
+						+e.BUTTON.more#more(type='button' onclick="showHide('medicalmenu_id')") Показать ещё 15 категорий			
+			+b.assortiment
+				+e.column
+					+e.block
+						+e.IMG.image-block(src='/images/medicine.png', alt='')
+					+e.block
+						+e.A.caption(href='#') Изделия медицинского назначения
+						+e.UL
+							+e.item 
+								+e.A(href='#') Марля, вата, бинты
+							+e.item
+								+e.A(href='#') Одноразовая одежда
+							+e.item
+								+e.A(href='#') Трубки, жгуты
+							+e.item 
+								+e.A(href='#') Перчатки
+							+e.item 
+								+e.A(href='#') Шприцы
+							+e.item
+								+e.A(href='#') Разное
+				+e.column
+					+e.block
+						+e.IMG.image-block(src='/images/str.png', alt='')
+					+e.block
+						+e.A.caption(href='#') Стерилизация, дезинфекция
+						+e.UL
+							+e.item
+								+e.A(href='#') Емкости, лотки
+							+e.item
+								+e.A(href='#') Облучатели бактерицидные
+							+e.item
+								+e.A(href='#') Индикаторы, крафт-пакеты
+							+e.NAV#dezinfactionmenu_id
+								+e.item 
+									+e.A(href='#') Стерилизаторы, камеры
+								+e.item
+									+e.A(href='#') Коробки
+						+e.BUTTON.more#more(type='button' onclick="showHide('dezinfactionmenu_id')") Показать ещё 15 категорий			
+				+e.column
+					+e.block
+						+e.IMG.image-block(src='/images/urolog.png', alt='')
+					+e.block
+						+e.A.caption(href='#') Урология, гинекология
+						+e.UL
+							+e.item 
+								+e.A(href='#') Инструментарий									
+				+e.column
+					+e.block
+						+e.IMG.image-block(src='/images/hirurg.png', alt='')
+					+e.block
+						+e.A.caption(href='#') Хирургия
+						+e.UL
+							+e.item
+								+e.A(href='#') Стулья и табуреты
+							+e.item
+								+e.A(href='#') Шкафы медицинские
+							+e.item
+								+e.A(href='#') Ширмы
+							+e.NAV#surgery_id
+								+e.item 
+									+e.A(href='#') Кушетки, банкетки
+								+e.item 
+									+e.A(href='#') Штативы
+						+e.BUTTON.more#more(type='button' onclick="showHide('surgery_id')") Показать ещё 15 категорий			
+			+b.BUTTON(type='button').catalog Перейти в полный каталог продукции
+			+b.BUTTON(type='button').catalog-more Ещё 9 категорий медицинских товаров
+		+b.interestoffers
+			+b.container
+				+e.h2 Интересные предложения:
+				+b.tabs
+					+e.SPAN.item 
+						+e.a(href='#') Все новинки
+					+e.SPAN.item 
+						+e.a(href='#') Все хиты продаж
+					+e.SPAN.item 
+						+e.a(href='#') Лучшая цена
+				+b.productblock
+					+b.product
+						+e.IMG.img(src='/images/1.png', alt='')
+						+e.stickernew Новинка
+						+b.caption
+							+e.aparat Физиотерапевтические аппараты
+							+e.name 
+								+e.a(href='#') Электроды для дарсонвализации
+							+e.for Для аппаратов «Корона», «Карат», «Ультратек»
+						+b.priceblock
+							+e.price 1 500 Р
+							+e.a(href='#')
+								+e.BUTTON(type='button').buy купить »
+					+b.product
+						+e.IMG.img(src='/images/2.png', alt='')
+						+e.stickerbest Лучшая цена
+						+b.caption
+							+e.aparat Тонометры Автоматические
+							+e.name 
+								+e.a(href='#') Тонометр автоматический с функцией диагностики аритмии Microlife BP A100
+							+e.for Для пенсионеров скидки!!!
+						+b.priceblock
+							+e.sale
+								+e.SPAN.oldprice 3 870 P
+								+e.SPAN.pricenew 1 500 Р
+							+e.a(href='#')
+								+e.BUTTON(type='button').buy купить »
+					+b.product
+						+e.IMG.img(src='/images/3.png', alt='')
+						+e.stickernew Новинка
+						+b.caption
+							+e.aparat Физиотерапевтические аппараты
+							+e.name 
+								+e.a(href='#') Концентратор кислородный 7F-1L
+							+e.for Для сеансов профилактической кислородотерапии, приготовления кислородных коктейлей
+						+b.priceblock
+							+e.price 1 500 Р
+							+e.a(href='#')
+								+e.BUTTON(type='button').buy купить »
+					+b.product
+						+e.IMG.img(src='/images/4.png', alt='')
+						+e.SPAN.stickerhit Хит продаж
+						+b.caption
+							+e.aparat Тонометры Автоматические
+							+e.name 
+								+e.a(href='#') Тонометр автоматический с функцией диагностики аритмии Microlife BP A100
+							+e.for ДАННЫЙ ТОВАР ИМЕЕТ РЕГИСТРАЦИОННОЕ УДОСТОВЕРЕНИЕ!
+						+b.priceblock
+							+e.priceno цена не указана
+							+e.a(href='#')
+								+e.BUTTON(type='button').buy купить »				
+		+b.container.content
+			+e.h2 Медицинская техника в Пензе и Пензенской области
+			+e.p ЗАО «Медтехника» осуществляет свою деятельность с 1965 года. В течение четырех десятилетий мы обеспечиваем бесперебойное функционирование и обновление парка медицинской техники в лечебно-профилактических учреждениях города и области. В настоящее время ЗАО «Медтехника» представляет собой современное предприятие, обеспечивающее лечебно-профилактические учреждения медицинской техникой, расходными материалами, предоставляющее полный спектр услуг, обеспечивающих бесперебойную и безопасную эксплуатацию медицинской техники. Высококвалифицированные специалисты, технологическое и инструментальное оснащение производства, развитая инфраструктура – все это позволяет выполнять работы на высоком техническом уровне. ЗАО «Медтехника» оказывает услуги населению г. Пензы и Пензенской области, участвует в национальном проекте «Здоровье» и программах модернизации здравоохранения. 
+		include footer
+		script(src='/js/swiper.min.js')
+		script(src='/js/vendor.min.js')

@@ -1,0 +1,233 @@
+@import 'variables';
+@import 'main';
+@import 'screen';
+@import 'typography';
+@import 'reset';
+.headerbottom {
+	background: $color_5;
+}
+#homemenu_id, #medicalmenu_id, #dezinfactionmenu_id, #surgery_id {
+	display: none;
+}
+.login {
+	width: 110px;
+	text-align: center;
+	background: $color_5;
+}
+.contact__p {
+	line-height: 25px;
+}
+.contact__item {
+	font-weight: 600;	
+	color: $color_9;
+	border-bottom: 1px solid $color_9;
+	line-height: 25px;
+}
+.contact__color {
+	color: $color_10;
+}
+.hire__color {
+	color: $color_10;
+	font-size: $fs_0;
+	font-weight: 300;
+}
+.swiper-container{
+	width: 100%;  
+}
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+  }
+  .swiper-pagination-bullet {
+	width: 10px;
+	height: 10px;
+	text-align: center;
+	line-height: 20px;
+	font-size: 12px;
+	color:#000;
+	opacity: 1;
+	background: $color_9;
+	margin: 15px 10px;
+  }
+  .swiper-pagination-bullet-active {
+	color:#fff;
+	background: $color_6;
+  }
+  .swiper-slide__item {
+	  position: absolute;
+	  width: 560px;
+	  background-color: rgba(55,174,213,0.6);
+	  font-size: $fs_4;
+	  text-align: center;
+	  padding: 15px;
+	  color: $color_5;
+	  font-weight: 300;
+	  line-height: 45px;
+	  padding: 50px 80px;
+	  top: 50px;
+  }
+.mobilemenu {
+	display: none;
+}
+.container__h4 {
+	margin: 30px 0 50px;
+	text-align: center;
+	color: $color_3;
+	text-transform: uppercase;
+	font-size: $fs_3;
+	font-weight: 400;
+}
+.assortiment__image-block {
+	margin-right: 30px;
+}
+.assortiment__more {
+	font-size: $fs_0;
+	color: $color_10;
+	font-weight: 300;
+	border-bottom: 1px dashed $color_9;
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+	font-style: italic;
+	margin-top: 20px;
+	background: none;
+	cursor: pointer;
+	outline: none;
+}
+.catalog-more {
+	font-size: $fs_3;
+	color: $color_3;
+	text-align: center;
+	margin: 0 auto 50px;
+	border: 0;
+	background: none;
+	display: block;
+	cursor: pointer;
+}
+.interestoffers {
+	background: url(/images/pattern.png);
+	min-height: 850px;
+}
+.container__h2 {
+	text-align: center;
+	font-size: $fs_4;
+	color: $color_1;
+	padding: 50px 0 20px 0;
+	font-weight: 300;
+}
+.tabs {
+	text-align: center;
+	margin-bottom: 25px;
+}
+.tabs__item a {
+	font-size: $fs_3;
+	color: $color_9;
+	font-weight: 600;
+	text-decoration: underline;
+	margin-right: 30px;
+}
+.caption__aparat {
+	font-size: $fs_0;
+	color: $color_15;
+	margin-bottom: 15px;
+}
+.caption__name {
+	margin: 0 auto 20px;
+}
+.caption__a {
+	width: 240px;
+	font-size: $fs_2;
+	color: $color_9;
+	font-weight: 700;
+	line-height: 20px;
+}
+.priceblock__price {
+	font-size: $fs_2;
+	color: $color_1;
+	font-weight: 600;
+}
+.priceblock__pricenew {
+	font-size: $fs_2;
+	color: $color_1;
+	font-weight: 600;
+	vertical-align: text-bottom;
+}
+.priceblock__oldprice {
+	font-size: $fs_0;
+	color: $color_18;
+	font-weight: 600;
+	margin-right: 15px;
+	text-decoration: line-through;
+}
+.priceblock__priceno {
+	font-size: $fs_3;
+	color: $color_1;
+	font-weight: 600;
+}
+.priceblock__buy {
+	font-size: $fs_0;
+	color: $color_5;
+	text-transform: uppercase;
+	text-align: center;
+	width: 100px;
+	margin: auto;
+	background: $color_6;
+	padding: 10px;
+	font-weight: 600;
+	border-radius: 3px;
+	margin-top: 20px;
+	border: 0;
+	cursor: pointer;	
+}
+.container__p {
+	text-align: center;
+	font-size: $fs_1;
+	margin-bottom: 20px;
+	line-height: 20px;
+}
+.footer {
+	background: $color_12;
+	padding: 20px;
+}
+.footercontact__txt {
+	color: $color_14;
+	font-size: $fs_0;
+	line-height: 20px;	
+}
+.footersearch__txt, .footerform__label {
+	color: $color_14;
+	font-size: $fs_5;
+	margin: 8px;
+}
+.footerform__btn {
+	font-size: $fs_6;
+	color: $color_14;
+	background: $color_16;
+	font-weight: 600;
+	width: 67px;
+	height: 27px;
+	border: 0;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.design__txt {
+	color: $color_13;
+	font-size: $fs_0;
+}
+.design__img {
+	vertical-align: middle;
+	margin-left: 15px;
+}

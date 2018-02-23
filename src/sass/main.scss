@@ -1,0 +1,24 @@
+@import 'variables';
+body {
+	font-family: $font_family_1;
+	font-size: $fs_1;
+	line-height: $fs_2;
+	color: $color_1;
+	font-weight: 400;
+}
+a {
+	text-decoration: none;
+	color: $color_1;
+	&:active {
+		color: $color_1;
+	}
+}
+.row {
+	margin-left: -15px;
+	margin-right: -15px;
+}
+.flex-assortiment {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 -15px 30px -15px;
+}
