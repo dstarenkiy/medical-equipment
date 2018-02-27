@@ -1,5 +1,5 @@
 gulp
-Моя сборка для gulp
+Medical Equipment - сборка для gulp
 
 Команды
 
