@@ -1,0 +1,11 @@
+include ../bemto/bemto.pug
+doctype html
+html
+	include ../blocks/head.pug
+	body
+		include ../blocks/header.pug
+		+b.MAIN.main
+			block .main
+		include ../blocks/footer.pug
+		script(src='/js/swiper.min.js')
+		script(src='/js/libs.js')

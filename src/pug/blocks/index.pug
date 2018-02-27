@@ -1,15 +1,17 @@
-extends ../layouts/default.pug
-
-+b.BLOCK.main__content
-	SECTION.swiper-container
-		+b.swiper-wrapper
-			+b.swiper-slide 
-				+e.SPAN.item Уже 50 лет мы обеспечиваем бесперебойную работу медицинской техники
-				+e.IMG(src='/images/slide.jpg', alt='')
-			+b.swiper-slide
-				+e.IMG(src='/images/slide.jpg', alt='')
-	+b.swiper-pagination			
-	SECTION.container.content
+extends ../blocks/default.pug
+block .main
+	+b.SECTION
+		+b.home-slider
+			+b.js-swiper-container.home-slider__container
+				+b.swiper-wrapper.home-slider__wrapper
+					+b.swiper-slide.home-slider__slide
+						+e.SPAN.item Уже 50 лет мы обеспечиваем бесперебойную работу медицинской техники
+						+e.IMG(src='/images/slide.jpg', alt='')
+					+b.swiper-slide.home-slider__slide
+						+e.IMG(src='/images/slide.jpg', alt='')
+	+b.SECTION
+		+b.js-swiper-pagination.home-slider__pagination
+	+b.SECTION.container.content
 		+e.H4.h4 Ассортимент нашей продукции
 		+b.assortiment
 			+e.column
