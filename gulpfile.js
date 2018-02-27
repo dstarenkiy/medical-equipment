@@ -23,10 +23,10 @@ gulp.task('jscommon', function() {
   });
 
 gulp.task('pug', function () {
-    return gulp.src('src/pug/*.pug')
+    return gulp.src('src/pug/pages/*.pug')
     .pipe(gp.plumber())
     .pipe(gp.pug({}))
-    .pipe(gulp.dest('build'))
+    .pipe(gulp.dest('build/'))
     .pipe(browserSync.stream());
 });  
 
@@ -69,7 +69,7 @@ gulp.task('img', function() {
     
 gulp.task('watch', function () {
     gulp.watch('src/sass/*.scss', gulp.series('sass'));
-    gulp.watch('src/pug/*.pug', gulp.series('pug'));            
+    gulp.watch('src/pug/pages/*.pug', gulp.series('pug'));            
     gulp.watch('src/script/*.js', gulp.series('jscommon'));
 });
 
