@@ -2,16 +2,12 @@ gulp
 Моя сборка для gulp
 
 Команды
-gulp build 
-gulp build:watch
-gulp build:bitrix
-gulp build:bitrix:watch
-gulp server - запускает build + локально разварчивает сервер с livereload
+
+gulp watch
+gulp - запускает build + локально разварчивает сервер с browsersync
 
 Структура проекта
-src/fonts - шрифты
-src/img/work - все картинки кроме иконок для спрайтов, будет скомпелировано в `buildpath + "/img"`
-src/img/icons - все картинки иконок для спрайтов, будет скомпелировано в `src/work/icons.png` + `src/less/partials/icons.less`
-src/less - стили, скомпелируется в `buildpath + "/css"`
-src/js - скрипты, скомпелируется в `buildpath + "/js"`
-pages - html файлы, скомпелируются файлы из корня `src` в корень `buildpath`
+src/images - изображения, компелируются и сжимаются в папку 'build/images'
+src/pug - файлы pug, компелируются в html в папку `build *.html`
+src/sass - стили, скомпелируется в `build/css`
+src/js - скрипты, скомпелируется в `build/js`
