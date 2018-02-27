@@ -2,9 +2,10 @@
 Medical Equipment - сборка для gulp
 
 ##Команды
-
+```
 gulp watch
 gulp - запускает build + локально разварчивает сервер с browsersync
+```
 
 ##Структура проекта
 ```
