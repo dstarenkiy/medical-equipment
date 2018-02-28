@@ -1,10 +1,10 @@
 @import 'variables';
 body {
-	font-family: $font_family_1;
-	font-size: $fs_1;
-	line-height: $fs_2;
-	color: $color_1;
-	font-weight: 400;
+	font-family: $base-font;
+	font-size: $big-space;
+	line-height: 18px;
+	color: $black;
+	font-weight: $regular;
 }
 .header {
 	flex: 0 0 auto;
@@ -19,21 +19,21 @@ body {
 	&__h4 {
 		margin: 30px 0 50px;
 		text-align: center;
-		color: $color_3;
+		color: $gray;
 		text-transform: uppercase;
-		font-size: $fs_3;
-		font-weight: 400;
+		font-size: $font-base;
+		font-weight: $regular;
 	}
 	&__h2 {
 		text-align: center;
-		font-size: $fs_4;
-		color: $color_1;
+		font-size: $h2-space;
+		color: $black;
 		padding: 50px 0 20px 0;
 		font-weight: 300;
 	}
 	&__p {
 		text-align: center;
-		font-size: $fs_1;
+		font-size: $big-space;
 		margin-bottom: 20px;
 		line-height: 20px;
 	}
@@ -43,13 +43,13 @@ body {
 	line-height: 25px;
 	}
 	&__item {
-		font-weight: 600;	
-		color: $color_9;
-		border-bottom: 1px solid $color_9;
+		font-weight: $bold;	
+		color: $dark-blue;
+		border-bottom: 1px solid $dark-blue;
 		line-height: 25px;
 	}
 	&__color {
-		color: $color_10;
+		color: $very-light-gray;
 	}
 }
 .assortiment {
@@ -57,10 +57,10 @@ body {
 		margin-right: 30px;
 	}
 	&__more {
-		font-size: $fs_0;
-		color: $color_10;
-		font-weight: 300;
-		border-bottom: 1px dashed $color_9;
+		font-size: $desktop-space;
+		color: $very-light-gray;
+		font-weight: light;
+		border-bottom: 1px dashed $dark-blue;
 		border-left: 0;
 		border-right: 0;
 		border-top: 0;
@@ -73,8 +73,8 @@ body {
 }
 .product {
 	&__aparat {
-		font-size: $fs_0;
-		color: $color_15;
+		font-size: $desktop-space;
+		color: $light-gray;
 		margin-bottom: 15px;
 	}
 	&__name {
@@ -82,48 +82,48 @@ body {
 	}
 	&__a {
 		width: 240px;
-		font-size: $fs_2;
-		color: $color_9;
-		font-weight: 700;
+		font-size: $extrabig-space;
+		color: $dark-blue;
+		font-weight: $extrabold;
 		line-height: 20px;
 	}
 	&__price {
-		font-size: $fs_2;
-		color: $color_1;
-		font-weight: 600;
+		font-size: $extrabig-space;
+		color: $black;
+		font-weight: $bold;
 	}
 	&__pricenew {
-		font-size: $fs_2;
-		color: $color_1;
-		font-weight: 600;
+		font-size: $extrabig-space;
+		color: $black;
+		font-weight: $bold;
 		vertical-align: text-bottom;
 	}
 	&__oldprice {
-		font-size: $fs_0;
-		color: $color_18;
-		font-weight: 600;
+		font-size: $desktop-space;
+		color: $light-orange;
+		font-weight: $bold;
 		margin-right: 15px;
 		text-decoration: line-through;
 	}
 	&__priceno {
-		font-size: $fs_3;
-		color: $color_1;
-		font-weight: 600;
+		font-size: $font-base;
+		color: $black;
+		font-weight: $bold;
 	}
 	&__buy {
-		font-size: $fs_0;
-		color: $color_5;
+		font-size: $desktop-space;
+		color: $white;
 		text-transform: uppercase;
 		text-align: center;
 		width: 100px;
 		margin: auto;
-		background: $color_6;
+		background: $light-red;
 		padding: 10px;
-		font-weight: 600;
+		font-weight: $bold;
 		border-radius: 3px;
 		margin-top: 20px;
 		border: 0;
-	cursor: pointer;	
+		cursor: pointer;	
 	}
 }
 .interestoffers {
@@ -134,9 +134,9 @@ body {
 	text-align: center;
 	margin-bottom: 25px;
 	&__item a {
-		font-size: $fs_3;
-		color: $color_9;
-		font-weight: 600;
+		font-size: $font-base;
+		color: $dark-blue;
+		font-weight: $bold;
 		text-decoration: underline;
 		margin-right: 30px;
 	}
@@ -144,19 +144,19 @@ body {
 .login {
 	width: 110px;
 	text-align: center;
-	background: $color_5;
+	background: $white;
 }
 .headerbottom {
-	background: $color_5;
+	background: $white;
 }
 #homemenu_id, #medicalmenu_id, #dezinfactionmenu_id, #surgery_id {
 	display: none;
 }
 a {
 	text-decoration: none;
-	color: $color_1;
+	color: $black;
 	&:active {
-		color: $color_1;
+		color: $black;
 	}
 }
 .home-slider {
@@ -167,7 +167,7 @@ a {
 .swiper-slide {
 	text-align: center;
 	font-size: 18px;
-	background: #fff;
+	background: $white;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: -webkit-flex;
@@ -187,24 +187,24 @@ a {
 	text-align: center;
 	line-height: 20px;
 	font-size: 12px;
-	color:#000;
+	color: $black;
 	opacity: 1;
-	background: $color_9;
+	background: $dark-blue;
 	margin: 15px 10px;
   }
   .swiper-pagination-bullet-active {
-	color:#fff;
-	background: $color_6;
+	color: $white;
+	background: $light-red;
   }
   .swiper-slide__item {
 	  position: absolute;
 	  width: 560px;
 	  background-color: rgba(55,174,213,0.6);
-	  font-size: $fs_4;
+	  font-size: $h2-space;
 	  text-align: center;
 	  padding: 15px;
-	  color: $color_5;
-	  font-weight: 300;
+	  color: $white;
+	  font-weight: $light;
 	  line-height: 45px;
 	  padding: 50px 80px;
 	  top: 50px;
@@ -213,8 +213,8 @@ a {
 	width: 100%;  
 }
 .catalog-more {
-	font-size: $fs_3;
-	color: $color_3;
+	font-size: $font-base;
+	color: $gray;
 	text-align: center;
 	margin: 0 auto 50px;
 	border: 0;
@@ -232,25 +232,25 @@ a {
 	margin: 0 -15px 30px -15px;
 }
 .footer {
-	background: $color_12;
+	background: $very-dark-gray;
 	padding: 20px;
 }
 .footercontact__txt {
-	color: $color_14;
-	font-size: $fs_0;
+	color: $very-lighten-gray;
+	font-size: $desktop-space;
 	line-height: 20px;	
 }
 .footersearch__txt {
-	color: $color_14;
-	font-size: $fs_5;
+	color: $very-lighten-gray;
+	font-size: $mobile-space;
 	margin: 8px;
 }
 .footerform {
 	&__btn {
-		font-size: $fs_6;
-		color: $color_14;
-		background: $color_16;
-		font-weight: 600;
+		font-size: $extrasmall;
+		color: $very-lighten-gray;
+		background: $dark-gray;
+		font-weight: bold;
 		width: 67px;
 		height: 27px;
 		border: 0;
@@ -258,15 +258,15 @@ a {
 		cursor: pointer;
 	}
 	&__label {
-		color: $color_14;
-		font-size: $fs_5;
+		color: $very-lighten-gray;
+		font-size: $mobile-space;
 		margin: 8px;
 	}	
 }
 .design {
 	&__txt {
-		color: $color_13;
-		font-size: $fs_0;
+		color: $very-light-gray;
+		font-size: $desktop-space;
 	}
 	&__img {
 		vertical-align: middle;

@@ -1,5 +1,5 @@
 @import 'variables';
-@media (min-width: 1340px) {
+@media (min-width: $desktop) {
     .container {
         width: $lg;
         margin-left: auto;
@@ -35,17 +35,17 @@
             &__item {
                 padding: 0 15px;
                 list-style-type: none;
-                font-size: $fs_0;
+                font-size: $desktop-space;
                 text-transform: uppercase;
-                color: $color_3;
-                font-weight: 600;
+                color: $gray;
+                font-weight: $bold;
                 a {
-                    color: $color_3;
+                    color: $gray;
                 }
             }
     }   
     .headertop {
-        background: $color_2;
+        background: $very-light-white;
     }
     .headerform {
         width: 15%;
@@ -55,8 +55,8 @@
                 background-repeat: no-repeat;
                 background-position: 10px;
                 outline: none;
-                font-size: $fs_0;
-                border: 1px solid $color_4;
+                font-size: $desktop-space;
+                border: 1px solid $very-light-white;
                 border-radius: 20px;
                 padding: 0 30px;
                 height: 30px;    
@@ -73,77 +73,77 @@
         line-height: 50px;
     }
     .login__item {
-        font-size: $fs_3;
+        font-size: $font-base;
         background-image: url(/images/login.png);
         background-repeat: no-repeat;
         background-position: 16px 19px;
         padding-left: 20px;
-        font-weight: 600;
+        font-weight: $bold;
         a {
-            color: $color_7;
+            color: $very-dark-gray;
         } 
     }
     .cart {
         width: 205px;
         text-align: center;
-        background: $color_6;
-        font-weight: 600;
+        background: $light-red;
+        font-weight: $bold;
         padding: 0 15px 0 15px;
         &__kol {
-            color: $color_5;
+            color: $white;
             margin-left: 15px;
         }
         &__item {
-            font-size: $fs_3;
+            font-size: $font-base;
             background-image: url(/images/cart.png);
             background-repeat: no-repeat;
             background-position: 10px 13px;
             padding-left: 20px;
             a {
-                color: $color_5;
+                color: $white;
             }
         }
     }     
     .contact {
         margin: auto 30px;
-        color: $color_8;
-        font-size: $fs_3;
+        color: $black;
+        font-size: $font-base;
         width: 25%;
     }
     .hire {
         margin: 8px auto;
         width: 25%;
         &__color {
-            color: $color_10;
-	        font-size: $fs_0;
-	        font-weight: 300;
+            color: $very-light-gray;
+	        font-size: $desktop-space;
+	        font-weight: $light;
         }
         &__item {
             display: flex;
         }
         &__p {
-            color: $color_10;
-            font-size: $fs_3;
+            color: $very-light-gray;
+            font-size: $font-base;
             line-height: 45px;
         }
         &__weight {
-            font-size: $fs_0;
-            color: $color_9;
-            font-weight: 700;
+            font-size: $desktop-space;
+            color: $dark-blue;
+            font-weight: $extrabold;
             background-image: url(/images/prokat.png);
             background-repeat: no-repeat;
             background-position: 1px;
             padding: 5px 0 0 40px;
         }
         &__button {
-            color: $color_5;
+            color: $white;
             text-transform: uppercase;
             border-radius: 5px;
-            background: $color_6;
+            background: $light-red;
             padding: 10px;
-            font-size: $fs_0;
+            font-size: $desktop-space;
             text-align: center;
-            font-weight: 600;
+            font-weight: $bold;
             width: 110px;
             margin-right: 30px;
             cursor: pointer;
@@ -161,38 +161,38 @@
         }
         &__caption {
             display: block;
-            font-size: $fs_2;
-            color: $color_9;
-            font-weight: 700;
+            font-size: $extrabig-space;
+            color: $dark-blue;
+            font-weight: $extrabold;
             line-height: 20px;
             margin-bottom: 15px;
         }
         &__item {
             display: flex;
-            font-size: $fs_1;
-            color: $color_8;
+            font-size: $big-space;
+            color: $black;
             list-style-type: none;
             line-height: 25px;
         &:hover a {
             text-decoration: underline;
-            color: $color_9;
+            color: $dark-blue;
         }
         &:before {
             content: "\203A";
-            font-size: $fs_7;
+            font-size: $li-space;
             margin-right: 10px;
-            color: $color_9;
-            font-weight: 400;
+            color: $dark-blue;
+            font-weight: $regular;
         }
         }       
     }   
     .catalog {
-        background: $color_9;
-        font-size: $fs_1;
+        background: $dark-blue;
+        font-size: $big-space;
         text-transform: uppercase;
-        font-weight: 600;
+        font-weight: $bold;
         padding: 20px;
-        color: $color_5;
+        color: $white;
         width: 470px;
         margin: 0 auto 30px;
         border: 0;
@@ -206,7 +206,7 @@
     .product {
         position: relative;
 	    width: 25%;
-	    background: $color_5;
+	    background: $white;
 	    text-align: center;
 	    padding: 10px 0 20px 0;
         margin-right: 30px;
@@ -218,39 +218,39 @@
 	        position: absolute;
 	        top: 195px;
 	        left: 0;
-	        background: $color_17;
+	        background: $light-green;
 	        padding: 5px;
-	        font-size: $fs_6;
-	        color: $color_5;
-            font-weight: 600;
+	        font-size: $extrasmall;
+	        color: $white;
+            font-weight: $bold;
         }
         &__stickerbest {
             position: absolute;
 	        top: 195px;
 	        left: 0;
-	        background: $color_18;
+	        background: $light-orange;
 	        padding: 5px;
-	        font-size: $fs_6;
-	        color: $color_5;
-	        font-weight: 600;
+	        font-size: $extrasmall;
+	        color: $white;
+	        font-weight: $bold;
         }
         &__stickerhit {
             position: absolute;
 	        top: 195px;
 	        left: 0;
-	        background: $color_19;
+	        background: $light-purple;
 	        padding: 5px;
-	        font-size: $fs_6;
-	        color: $color_5;
-	        font-weight: 600;
+	        font-size: $extrasmall;
+	        color: $white;
+	        font-weight: $bold;
         }
         &__caption {
             padding: 0 20px;
             min-height: 220px;
         }
         &__for {
-            font-size: $fs_1;
-            color: $color_1;
+            font-size: $big-space;
+            color: $black;
             line-height: 20px;
         }
     }
@@ -262,7 +262,7 @@
 .footerform {
     display: flex;
     &__input {
-        background: $color_15;
+        background: $light-gray;
 	    width: 210px;
 	    outline: none;
 	    border: 0;
@@ -272,17 +272,17 @@
     }
 }
 .footertxt {
-	color: $color_13;
-	font-size: $fs_0;
+	color: $very-light-gray;
+	font-size: $desktop-space;
 }
 }
 @media (min-width: 993px) and (max-width: 1339px) {
     .container {
-        width: 993px;
+        width: $laptops;
         margin-left: auto;
         margin-right: auto;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: $gutter;
+        padding-right: $gutter;
     }
     .headertop-row {
         display: flex;
@@ -312,12 +312,12 @@
         &__item {
             padding: 0 15px;
             list-style-type: none;
-            font-size: $fs_5;
+            font-size: $mobile-space;
             text-transform: uppercase;
-            color: $color_3;
-            font-weight: 600;
+            color: $gray;
+            font-weight: $bold;
             a {
-            color: $color_3;
+            color: $gray;
             }
         }
     }    
@@ -329,15 +329,15 @@
             background-repeat: no-repeat;
             background-position: 10px;
             outline: none;
-            font-size: $fs_5;
-            border: 1px solid $color_4;
+            font-size: $mobile-space;
+            border: 1px solid $very-light-white;
             border-radius: 20px;
             padding: 0 30px;
             height: 30px;
         }
     }
     .headertop {
-        background: $color_2;
+        background: $very-light-white;
         overflow: hidden;
     }
     .logincart {
@@ -352,43 +352,43 @@
             width: 200px;
         }
         &__item {
-            font-size: $fs_0;
+            font-size: $desktop-space;
             background-image: url(/images/login.png);
             background-repeat: no-repeat;
             background-position: 16px 19px;
             padding-left: 20px;
-            font-weight: 600;
+            font-weight: $bold;
             a {
-                color: $color_7;
+                color: $very-dark-gray;
             } 
         }
     }    
     .cart {
         width: 165px;
         text-align: center;
-        background: $color_6;
-        font-weight: 600;
+        background: $light-red;
+        font-weight: $bold;
         &__kol {
-            color: $color_5;
+            color: $white;
             margin-left: 5px;
         }
         &__item {
-            font-size: $fs_0;
+            font-size: $desktop-space;
             background-image: url(/images/cart.png);
             background-repeat: no-repeat;
             background-position: 10px 13px;
             a {
-            color: $color_5;
+            color: $white;
             }    
         }   
     }
     .catalog {
-        background: $color_9;
-        font-size: $fs_1;
+        background: $dark-blue;
+        font-size: $big-space;
         text-transform: uppercase;
-        font-weight: 600;
+        font-weight: $bold;
         padding: 20px;
-        color: $color_5;
+        color: $white;
         width: 470px;
         margin: 0 auto 30px;
         border: 0;
@@ -397,15 +397,15 @@
     }
     .contact {
         margin: 10px;
-        color: $color_8;
-        font-size: $fs_0;       
+        color: $black;
+        font-size: $desktop-space;       
     }
     .hire {
         margin: 8px auto;
         width: 25%;
         &__p {
-            color: $color_10;
-            font-size: $fs_0;
+            color: $very-light-gray;
+            font-size: $desktop-space;
             line-height: 45px;
         }
         &__item {
@@ -415,9 +415,9 @@
             margin-top: 10px;
         }
         &__weight {
-            font-size: $fs_5;
-            color: $color_9;
-            font-weight: 700;
+            font-size: $mobile-space;
+            color: $dark-blue;
+            font-weight: $extrabold;
             background-image: url(/images/prokat.png);
             background-repeat: no-repeat;
             background-position: 1px;
@@ -425,14 +425,14 @@
             margin-right: 5px;
         }
         &__button {
-            color: $color_5;
+            color: $white;
             text-transform: uppercase;
             border-radius: 5px;
-            background: $color_6;
+            background: $light-red;
             padding: 10px;
-            font-size: $fs_5;
+            font-size: $mobile-space;
             text-align: center;
-            font-weight: 600;
+            font-weight: $bold;
             width: 110px;
             margin-right: 30px;
             cursor: pointer;
@@ -450,28 +450,28 @@
         }
         &__caption {
             display: block;
-            font-size: $fs_1;
-            color: $color_9;
-            font-weight: 700;
+            font-size: $big-space;
+            color: $dark-blue;
+            font-weight: $extrabold;
             line-height: 20px;
             margin-bottom: 15px;
         }
         &__item {
             display: flex;
-            font-size: $fs_3;
-            color: $color_8;
+            font-size: $font-base;
+            color: $black;
             list-style-type: none;
             line-height: 25px;
             &:hover a {
                 text-decoration: underline;
-                color: $color_9;
+                color: $dark-blue;
             }
             &:before {
                 content: "\203A";
-                font-size: $fs_7;
+                font-size: $li-space;
                 margin-right: 10px;
-                color: $color_9;
-                font-weight: 400;
+                color: $dark-blue;
+                font-weight: $regular;
             }
         }
     }
@@ -483,7 +483,7 @@
     .product {
         position: relative;
         width: 25%;
-        background: $color_5;
+        background: $white;
         text-align: center;
         padding: 10px 0 20px 0;
         margin: 30px;
@@ -496,39 +496,39 @@
             position: absolute;
             top: 165px;
             left: 0;
-            background: $color_17;
+            background: $light-green;
             padding: 5px;
-            font-size: $fs_6;
-            color: $color_5;
-            font-weight: 600;
+            font-size: $extrasmall;
+            color: $white;
+            font-weight: $bold;
         }
         &__stickerbest {
             position: absolute;
             top: 165px;
             left: 0;
-            background: $color_18;
+            background: $light-orange;
             padding: 5px;
-            font-size: $fs_6;
-            color: $color_5;
-            font-weight: 600;
+            font-size: $extrasmall;
+            color: $white;
+            font-weight: $bold;
         }
         &__stickerhit {
             position: absolute;
             top: 165px;
             left: 0;
-            background: $color_19;
+            background: $light-purple;
             padding: 5px;
-            font-size: $fs_6;
-            color: $color_5;
-            font-weight: 600; 
+            font-size: $extrasmall;
+            color: $white;
+            font-weight: $bold; 
         }
         &__caption {
             padding: 0 20px;
             min-height: 220px;
         }
         &__for {
-            font-size: $fs_1;
-            color: $color_1;
+            font-size: $big-space;
+            color: $black;
             line-height: 20px;
         }
     }   
@@ -540,7 +540,7 @@
     .footerform {
         display: flex;
         &__input {
-            background: $color_15;
+            background: $very-light-gray;
             width: 210px;
             outline: none;
             border: 0;
@@ -550,17 +550,17 @@
         }
     }
     .footertxt {
-        color: $color_13;
-        font-size: $fs_0;
+        color: $very-light-gray;
+        font-size: $desktop-space;
     }
 }
 @media (min-width: 769px) and (max-width: 992px) {
     .container {
-        width: 720px;
+        width: $tablet;
         margin-left: auto;
         margin-right: auto;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: $gutter;
+        padding-right: $gutter;
     }
     .headertop-row {
         display: flex;
@@ -591,12 +591,12 @@
         &__item {
             padding: 0 15px;
             list-style-type: none;
-            font-size: $fs_0;
+            font-size: $desktop-space;
             text-transform: uppercase;
-            color: $color_3;
-            font-weight: 600;
+            color: $gray;
+            font-weight: $bold;
             a {
-                color: $color_3;
+                color: $gray;
             }
         }
     }   
@@ -613,15 +613,15 @@
             background-repeat: no-repeat;
             background-position: 10px;
             outline: none;
-            font-size: $fs_0;
-            border: 1px solid $color_4;
+            font-size: $desktop-space;
+            border: 1px solid $very-light-white;
             border-radius: 20px;
             padding: 0 30px;
             height: 30px;
         }
     }
     .headertop {
-        background: $color_2;
+        background: $very-light-white;
         overflow: hidden;       
     }    
     .logincart {
@@ -629,42 +629,42 @@
         line-height: 50px;
     }
     .login__item {
-        font-size: $fs_0;
+        font-size: $desktop-space;
         background-image: url(/images/login.png);
         background-repeat: no-repeat;
         background-position: 16px 19px;
         padding-left: 20px;
-        font-weight: 600;
+        font-weight: $bold;
         a {
-            color: $color_7;
+            color: $very-dark-gray;
         } 
     }
     .cart {
         width: 165px;
         text-align: center;
-        background: $color_6;
-        font-weight: 600;
+        background: $light-red;
+        font-weight: $bold;
         &__kol {
-            color: $color_5;
+            color: $white;
             margin-left: 5px;
         }
         &__item {
-            font-size: $fs_0;
+            font-size: $desktop-space;
             background-image: url(/images/cart.png);
             background-repeat: no-repeat;
             background-position: 10px 13px;
             a {
-                color: $color_5;
+                color: $white;
             }
         }
     }   
     .catalog {
-        background: $color_9;
-        font-size: $fs_1;
+        background: $dark-blue;
+        font-size: $big-space;
         text-transform: uppercase;
-        font-weight: 600;
+        font-weight: $bold;
         padding: 20px;
-        color: $color_5;
+        color: $white;
         width: 470px;
         margin: 0 auto 30px;
         border: 0;
@@ -673,16 +673,16 @@
     }
     .contact {
         margin: 10px;
-        color: $color_8;
-        font-size: $fs_3;
+        color: $black;
+        font-size: $font-base;
         order: 3;   
     }
     .hire {
         margin: 8px auto;
         order: 2;
         &__p {
-            color: $color_10;
-            font-size: $fs_3;
+            color: $very-light-gray;
+            font-size: $font-base;
             line-height: 45px;
         }
         &__item {
@@ -692,9 +692,9 @@
             margin-top: -10px;
         }
         &__weight {
-            font-size: $fs_3;
-            color: $color_9;
-            font-weight: 700;
+            font-size: $font-base;
+            color: $dark-blue;
+            font-weight: $extrabold;
             background-image: url(/images/prokat.png);
             background-repeat: no-repeat;
             background-position: 1px;
@@ -702,14 +702,14 @@
             margin-right: 5px;
         }
         &__button {
-            color: $color_5;
+            color: $white;
             text-transform: uppercase;
             border-radius: 5px;
-            background: $color_6;
+            background: $light-red;
             padding: 10px;
-            font-size: $fs_0;
+            font-size: $desktop-space;
             text-align: center;
-            font-weight: 600;
+            font-weight: $bold;
             width: 110px;
             margin-right: 30px;
             cursor: pointer;
@@ -727,28 +727,28 @@
         }
         &__caption {
             display: block;
-            font-size: $fs_1;
-            color: $color_9;
-            font-weight: 700;
+            font-size: $big-space;
+            color: $dark-blue;
+            font-weight: $extrabold;
             line-height: 20px;
             margin-bottom: 15px;
         }
         &__item {
             display: flex;
-            font-size: $fs_3;
-            color: $color_8;
+            font-size: $font-base;
+            color: $black;
             list-style-type: none;
             line-height: 25px;
             &:hover a {
                 text-decoration: underline;
-                color: $color_9;
+                color: $dark-blue;
             }
             &:before {
                 content: "\203A";
-                font-size: $fs_7;
+                font-size: $li-space;
                 margin-right: 10px;
-                color: $color_9;
-                font-weight: 400;
+                color: $dark-blue;
+                font-weight: $regular;
             }
         }
     }
@@ -759,7 +759,7 @@
     }
     .product {
         position: relative;
-        background: $color_5;
+        background: $white;
         text-align: center;
         padding: 10px 0 20px 0;
         margin: 30px;
@@ -773,39 +773,39 @@
             position: absolute;
             top: 165px;
             left: 0;
-            background: $color_17;
+            background: $light-green;
             padding: 5px;
-            font-size: $fs_6;
-            color: $color_5;
-            font-weight: 600;
+            font-size: $extrasmall;
+            color: $white;
+            font-weight: $bold;
         }
         &__stickerbest {
             position: absolute;
             top: 165px;
             left: 0;
-            background: $color_18;
+            background: $light-orange;
             padding: 5px;
-            font-size: $fs_6;
-            color: $color_5;
-            font-weight: 600;
+            font-size: $extrasmall;
+            color: $white;
+            font-weight: $bold;
         }
         &__stickerhit {
             position: absolute;
             top: 165px;
             left: 0;
-            background: $color_19;
+            background: $light-purple;
             padding: 5px;
-            font-size: $fs_6;
-            color: $color_5;
-            font-weight: 600;
+            font-size: $extrasmall;
+            color: $white;
+            font-weight: $bold;
         }
         &__caption {
             padding: 0 20px;
             min-height: 220px;
         }
         &__for {
-            font-size: $fs_1;
-            color: $color_1;
+            font-size: $big-space;
+            color: $black;
             line-height: 20px;
         }
     }
@@ -817,7 +817,7 @@
     .footerform {
         display: flex;
         &__input {
-            background: $color_15;
+            background: $very-light-gray;
             width: 210px;
             outline: none;
             border: 0;
@@ -827,17 +827,17 @@
         }
     }
     .footertxt {
-        color: $color_13;
-        font-size: $fs_0;
+        color: $very-light-gray;
+        font-size: $desktop-space;
     }
 }
 @media (min-width: 320px) and (max-width: 768px) {
     .container {
-        width: 320px;
+        width: $mobile;
         margin-left: auto;
         margin-right: auto;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: $gutter;
+        padding-right: $gutter;
     }   
     .nav__navbar {
         background-image: url(../images/navbar.png);
@@ -871,12 +871,12 @@
         &__item {
             padding: 5px;
             list-style-type: none;
-            font-size: $fs_0;
+            font-size: $desktop-space;
             text-transform: uppercase;
-            color: $color_3;
-            font-weight: 600;
+            color: $gray;
+            font-weight: $bold;
             a {
-                color: $color_3;
+                color: $gray;
             }
         }
         &__btn {
@@ -896,15 +896,15 @@
             background-repeat: no-repeat;
             background-position: 10px;
             outline: none;
-            font-size: $fs_5;
-            border: 1px solid $color_4;
+            font-size: $mobile-space;
+            border: 1px solid $very-light-white;
             border-radius: 20px;
             padding: 0 30px;
             height: 30px;
         }
     }
     .headertop {
-        background: $color_2;
+        background: $very-light-white;
         overflow: hidden;
     }   
     .logincart {
@@ -912,42 +912,42 @@
         line-height: 50px;
     }
     .login__item {
-        font-size: $fs_0;
+        font-size: $desktop-space;
         background-image: url(/images/login.png);
         background-repeat: no-repeat;
         background-position: 16px 19px;
         padding-left: 20px;
-        font-weight: 600;
+        font-weight: $bold;
         a {
-            color: $color_7;
+            color: $very-dark-gray;
         } 
     }
     .cart {
         width: 165px;
         text-align: center;
-        background: $color_6;
-        font-weight: 600;
+        background: $light-red;
+        font-weight: $bold;
         &__kol {
-            color: $color_5;
+            color: $white;
             margin-left: 5px;
         }
         &__item {
-            font-size: $fs_0;
+            font-size: $desktop-space;
             background-image: url(/images/cart.png);
             background-repeat: no-repeat;
             background-position: 10px 13px;
             a {
-                color: $color_5;
+                color: $white;
             }
         }
     }    
     .catalog {
-        background: $color_9;
-        font-size: $fs_0;
+        background: $dark-blue;
+        font-size: $desktop-space;
         text-transform: uppercase;
-        font-weight: 600;
+        font-weight: $bold;
         padding: 20px;
-        color: $color_5;
+        color: $white;
         margin: 0 auto 30px;
         border: 0;
         cursor: pointer;
@@ -955,15 +955,15 @@
     }
     .contact {
         margin: 10px auto;
-        color: $color_8;
-        font-size: $fs_0;       
+        color: $black;
+        font-size: $desktop-space;       
     }
     .hire {
         margin: 8px auto 20px;
         width: 290px;
         &__p {
-            color: $color_10;
-            font-size: $fs_0;
+            color: $very-light-gray;
+            font-size: $desktop-space;
             line-height: 45px;
         }
         &__item {
@@ -973,9 +973,9 @@
             margin-top: -10px;
         }
         &__weight {
-            font-size: $fs_5;
-            color: $color_9;
-            font-weight: 700;
+            font-size: $mobile-space;
+            color: $dark-blue;
+            font-weight: $extrabold;
             background-image: url(/images/prokat.png);
             background-repeat: no-repeat;
             background-position: 1px;
@@ -983,14 +983,14 @@
             margin-right: 5px;
         }
         &__button {
-            color: $color_5;
+            color: $white;
             text-transform: uppercase;
             border-radius: 5px;
-            background: $color_6;
+            background: $light-red;
             padding: 10px;
-            font-size: $fs_5;
+            font-size: $mobile-space;
             text-align: center;
-            font-weight: 600;
+            font-weight: $bold;
             width: 110px;
             margin-right: 30px;
             cursor: pointer;
@@ -1008,28 +1008,28 @@
         }
         &__caption {
             display: block;
-            font-size: $fs_1;
-            color: $color_9;
-            font-weight: 700;
+            font-size: $big-space;
+            color: $dark-blue;
+            font-weight: $extrabold;
             line-height: 20px;
             margin-bottom: 15px;
         }
         &__item {
             display: flex;
-            font-size: $fs_3;
-            color: $color_8;
+            font-size: $font-base;
+            color: $black;
             list-style-type: none;
             line-height: 25px;
             &:hover a {
                 text-decoration: underline;
-                color: $color_9;
+                color: $dark-blue;
             }
             &:before {
                 content: "\203A";
-                font-size: $fs_7;
+                font-size: $li-space;
                 margin-right: 10px;
-                color: $color_9;
-                font-weight: 400;
+                color: $dark-blue;
+                font-weight: $regular;
             }
         }
     }    
@@ -1040,7 +1040,7 @@
     }
     .product {
         position: relative;
-        background: $color_5;
+        background: $white;
         text-align: center;
         padding: 10px 0 20px 0;
         margin: 30px;
@@ -1054,39 +1054,39 @@
             position: absolute;
             top: 165px;
             left: 0;
-            background: $color_17;
+            background: $light-green;
             padding: 5px;
-            font-size: $fs_6;
-            color: $color_5;
-            font-weight: 600;
+            font-size: $extrasmall;
+            color: $white;
+            font-weight: $bold;
         }
         &__stickerbest {
             position: absolute;
             top: 165px;
             left: 0;
-            background: $color_18;
+            background: $light-orange;
             padding: 5px;
-            font-size: $fs_6;
-            color: $color_5;
-            font-weight: 600;
+            font-size: $extrasmall;
+            color: $white;
+            font-weight: $bold;
         }
         &__stickerhit {
             position: absolute;
             top: 165px;
             left: 0;
-            background: $color_19;
+            background: $light-purple;
             padding: 5px;
-            font-size: $fs_6;
-            color: $color_5;
-            font-weight: 600;
+            font-size: $extrasmall;
+            color: $white;
+            font-weight: $bold;
         }
         &__caption {
             padding: 0 20px;
             min-height: 220px;
         }
         &__for {
-            font-size: $fs_1;
-            color: $color_1;
+            font-size: $big-space;
+            color: $black;
             line-height: 20px;
         }
     }    
@@ -1100,7 +1100,7 @@
         display: flex;
         margin-top: 15px;
         &__input {
-            background: $color_15;
+            background: $very-light-gray;
             width: 110px;
             outline: none;
             border: 0;
@@ -1113,8 +1113,8 @@
         margin-top :15px;
     }
     .footertxt {
-        color: $color_13;
-        font-size: $fs_0;
+        color: $very-light-gray;
+        font-size: $desktop-space;
         padding: 10px;
     }
 }
