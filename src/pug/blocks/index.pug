@@ -11,136 +11,23 @@ block .main
 						+e.IMG(src='/images/slide.jpg', alt='')
 	+b.SECTION
 		+b.js-swiper-pagination.home-slider__pagination
+	- var catalogList = [{title: "Массажные столы Vernam",item: ["Складные массажные столы", "Аксессуары для массажа", "Стационарные массажные столы"],catalogImg: "/images/massage.png",catalogUrl: "#"},{title: "Товары для дома",btnMore: "",item: ["Мать и дитя", "Тонометры", "Ингаляторы", "Коляски инвалидные", "Аппараты", "Тонометры", "Ингаляторы"],catalogImg: "/images/home.png",catalogUrl: "#"},{title: "Для здоровья и красоты",item: ["Аппараты прессотерапии", "Массаж", "Разное", "Фитнес", "Тренажеры"],catalogImg: "/images/healthy.png",catalogUrl: "#"},{title: "Мебель медицинская",btnMore: "",item: ["Стулья и табуреты", "Шкафы медицинские", "Ширмы", "Кушетки, банкетки", "Штативы", "Кровати", "Стулья", "Табуреты"],catalogImg: "/images/furniture.png",catalogUrl: "#"},{title: "Изделия медицинского назначения",item: ["Марля, вата, бинты", "Одноразовая одежда", "Трубки, жгуты", "Перчатки", "Жгуты", "Разное"],catalogImg: "/images/medicine.png",catalogUrl: "#"},{title: "Стерилизация, дезинфекция",btnMore: "",item: ["Емкости, лотки", "Облучатели бактерицидные", "Индикаторы, крафт-пакеты", "Стерилизаторы, камеры", "Коробки"],catalogImg: "/images/str.png",catalogUrl: "#"},{title: "Урология, гинекология",item: ["Инструментарий"],catalogImg: "/images/urolog.png",catalogUrl: "#"},{title: "Хирургия",btnMore: "",item: ["Стулья и табуреты", "Шкафы медицинские", "Ширмы", "Кушетки, банкетки", "Штативы"],catalogImg: "/images/urolog.png",catalogUrl: "#"}];
+	mixin assortiment(catalog)
+		+e.item.js-asortiment-catalog-items
+			+e.img
+				+e.IMG.image-block(src=catalog.catalogImg)
+			+e.content
+				+e.A.caption(href=catalog.catalogUrl)= catalog.title
+				+e.UL
+					each item in catalog.item
+						+e.li
+							+e.a(href=catalog.catalogUrl)= item
+				+b.A.tumbler.js-tumbler(href='#')= catalog.btnMore
 	+b.SECTION.container.content
 		+e.H4.h4 Ассортимент нашей продукции
-		+b.assortiment
-			+e.column
-				+e.block
-					+e.IMG.image-block(src='/images/massage.png', alt='')
-				+e.block
-					+e.A.caption(href='#') Массажные столы Vernam
-					+e.UL
-						+e.item
-							+e.A(href='#') Складные массажные столы
-						+e.item
-							+e.A(href='#') Аксессуары для массажа
-						+e.item
-							+e.A(href='#') Стационарные массажные столы
-			+e.column
-				+e.block
-					+e.IMG.image-block(src='/images/home.png', alt='')
-				+e.block
-					+e.A.caption(href='#') Товары для дома
-					+e.UL
-						+e.item 
-							+e.A(href='#') Мать и дитя
-						+e.item
-							+e.A(href='#') Тонометры
-						+e.NAV#homemenu_id
-							+e.item
-								+e.A(href='#') Ингаляторы
-							+e.item
-								+e.A(href='#') Коляски инвалидные
-							+e.item
-								+e.A(href='#') Физиотерапевтические аппараты
-					+e.BUTTON.more#more(type='button' onclick="showHide('homemenu_id')") Показать ещё 15 категорий
-			+e.column
-				+e.block
-					+e.IMG.image-block(src='/images/healthy.png', alt='')
-				+e.block
-					+e.A.caption(href='#') Для здоровья и красоты
-					+e.UL
-						+e.item 
-							+e.A(href='#') Аппараты прессотерапии
-						+e.item 
-							+e.A(href='#') Массаж
-						+e.item
-							+e.A(href='#') Разное
-						+e.item 
-							+e.A(href='#') Фитнес
-						+e.item
-							+e.A(href='#') Тренажеры					
-			+e.column
-				+e.block
-					+e.IMG.image-block(src='/images/furniture.png', alt='')
-				+e.block
-					+e.A.caption(href='#') Мебель медецинская
-					+e.UL
-						+e.item
-							+e.A(href='#') Стулья и табуреты
-						+e.item
-							+e.A(href='#') Шкафы медицинские
-						+e.NAV#medicalmenu_id
-							+e.item
-								+e.A(href='#') Ширмы
-							+e.item
-								+e.A(href='#') Кушетки, банкетки
-							+e.item
-								+e.A(href='#') Штативы
-					+e.BUTTON.more#more(type='button' onclick="showHide('medicalmenu_id')") Показать ещё 15 категорий			
-		+b.assortiment
-			+e.column
-				+e.block
-					+e.IMG.image-block(src='/images/medicine.png', alt='')
-				+e.block
-					+e.A.caption(href='#') Изделия медицинского назначения
-					+e.UL
-						+e.item 
-							+e.A(href='#') Марля, вата, бинты
-						+e.item
-							+e.A(href='#') Одноразовая одежда
-						+e.item
-							+e.A(href='#') Трубки, жгуты
-						+e.item 
-							+e.A(href='#') Перчатки
-						+e.item 
-							+e.A(href='#') Шприцы
-						+e.item
-							+e.A(href='#') Разное
-			+e.column
-				+e.block
-					+e.IMG.image-block(src='/images/str.png', alt='')
-				+e.block
-					+e.A.caption(href='#') Стерилизация, дезинфекция
-					+e.UL
-						+e.item
-							+e.A(href='#') Емкости, лотки
-						+e.item
-							+e.A(href='#') Облучатели бактерицидные
-						+e.item
-							+e.A(href='#') Индикаторы, крафт-пакеты
-						+e.NAV#dezinfactionmenu_id
-							+e.item 
-								+e.A(href='#') Стерилизаторы, камеры
-							+e.item
-								+e.A(href='#') Коробки
-					+e.BUTTON.more#more(type='button' onclick="showHide('dezinfactionmenu_id')") Показать ещё 15 категорий			
-			+e.column
-				+e.block
-					+e.IMG.image-block(src='/images/urolog.png', alt='')
-				+e.block
-					+e.A.caption(href='#') Урология, гинекология
-					+e.UL
-						+e.item 
-							+e.A(href='#') Инструментарий									
-			+e.column
-				+e.block
-					+e.IMG.image-block(src='/images/hirurg.png', alt='')
-				+e.block
-					+e.A.caption(href='#') Хирургия
-					+e.UL
-						+e.item
-							+e.A(href='#') Стулья и табуреты
-						+e.item
-							+e.A(href='#') Шкафы медицинские
-						+e.item
-							+e.A(href='#') Ширмы
-						+e.NAV#surgery_id
-							+e.item 
-								+e.A(href='#') Кушетки, банкетки
-							+e.item 
-								+e.A(href='#') Штативы
-					+e.BUTTON.more#more(type='button' onclick="showHide('surgery_id')") Показать ещё 15 категорий						
+		+b.asortiment-catalog#js-asortiment-catalog
+			for catalog in catalogList
+				+assortiment(catalog)
 		+b.BUTTON(type='button').catalog Перейти в полный каталог продукции
 		+b.BUTTON(type='button').catalog-more Ещё 9 категорий медицинских товаров
 	+b.SECTION.interestoffers

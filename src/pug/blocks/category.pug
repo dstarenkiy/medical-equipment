@@ -1,0 +1,173 @@
+extends ../blocks/default.pug
+block .main
+	+b.container
+		+b.OL.breadcrumb
+			+e.item
+				+e.A.link(href='#') Главная
+			+e.item
+				+e.A.link(href='#') Каталог
+		+b.H1 Каталог		
+		+b.row
+			+b.ASIDE.aside
+				+e.menu Каталог
+				+e.UL.nav
+					+e.item 
+						+e.A.link(href='#') Массажные столы Vernam
+						+e.B.caret
+					+e.item 
+						+e.A.link(href='#') Товары для дома
+						+e.B.caret
+					+e.item 
+						+e.A.link(href='#') Для здоровья и красоты
+						+e.B.caret
+					+e.item 
+						+e.A.link(href='#') Мебель медицинская
+						+e.B.caret
+					+e.item 
+						+e.A.link(href='#') Изделия медицинского назначения
+						+e.B.caret
+					+e.item 
+						+e.A.link(href='#') Стерилизация, дезинфекция
+						+e.B.caret
+					+e.item 
+						+e.A.link(href='#') Урология, гинекология
+						+e.B.caret
+					+e.item 
+						+e.A.link(href='#') Хирургия
+						+e.B.caret
+					+e.item 
+						+e.A.link(href='#') Офтальмология
+						+e.B.caret
+					+e.item 
+						+e.A.link(href='#') ЛОР оборудование и инструменты
+						+e.B.caret
+					+e.item 
+						+e.A.link(href='#') Стоматология
+						+e.B.caret
+					+e.item 
+						+e.A.link(href='#') Диагностика
+						+e.B.caret
+					+e.item 
+						+e.A.link(href='#') Лабораторное оборудование и инструменты
+						+e.B.caret
+					+e.item 
+						+e.A.link(href='#') Травматология
+						+e.B.caret
+					+e.item 
+						+e.A.link(href='#') Рентгеновское оборудование
+						+e.B.caret
+					+e.item 
+						+e.A.link(href='#') Утилизация
+						+e.B.caret
+					+e.item 
+						+e.A.link(href='#') Косметлогия и дермотология
+						+e.B.caret
+			+b.categoryblock
+				+b.button-group
+					+e.container
+						+e.show Показано товаров: 2 010
+					+b.sorting
+						+e.container
+							+e.SPAN.name Сортировать по: 
+							+e.SPAN.position наименованию
+				+b.product
+					+e.IMG.img(src='/images/1.png', alt='')
+					+e.stickernew Новинка
+					+e.caption
+						+e.aparat Физиотерапевтические аппараты
+						+e.name 
+							+e.a(href='#') Электроды для дарсонвализации
+						+e.for Для аппаратов «Корона», «Карат», «Ультратек»
+					+e.priceblock
+						+e.price 1 500 Р
+						+e.a(href='#')
+							+e.BUTTON(type='button').buy купить »
+				+b.product
+					+e.IMG.img(src='/images/2.png', alt='')
+					+e.stickerbest Лучшая цена
+					+e.caption
+						+e.aparat Тонометры Автоматические
+						+e.name 
+							+e.a(href='#') Тонометр автоматический с функцией диагностики аритмии Microlife BP A100
+						+e.for Для пенсионеров скидки!!!
+					+e.priceblock
+						+e.sale
+							+e.SPAN.oldprice 3 870 P
+							+e.SPAN.pricenew 1 500 Р
+						+e.a(href='#')
+							+e.BUTTON(type='button').buy купить »
+				+b.product
+					+e.IMG.img(src='/images/3.png', alt='')
+					+e.stickernew Новинка
+					+e.caption
+						+e.aparat Физиотерапевтические аппараты
+						+e.name 
+							+e.a(href='#') Концентратор кислородный 7F-1L
+						+e.for Для сеансов профилактической кислородотерапии, приготовления кислородных коктейлей
+					+e.priceblock
+						+e.price 1 500 Р
+						+e.a(href='#')
+							+e.BUTTON(type='button').buy купить »			
+				+b.product
+					+e.IMG.img(src='/images/1.png', alt='')
+					+e.stickernew Новинка
+					+e.caption
+						+e.aparat Физиотерапевтические аппараты
+						+e.name 
+							+e.a(href='#') Электроды для дарсонвализации
+						+e.for Для аппаратов «Корона», «Карат», «Ультратек»
+					+e.priceblock
+						+e.price 1 500 Р
+						+e.a(href='#')
+							+e.BUTTON(type='button').buy купить »
+				+b.product
+					+e.IMG.img(src='/images/2.png', alt='')
+					+e.stickerbest Лучшая цена
+					+e.caption
+						+e.aparat Тонометры Автоматические
+						+e.name 
+							+e.a(href='#') Тонометр автоматический с функцией диагностики аритмии Microlife BP A100
+						+e.for Для пенсионеров скидки!!!
+					+e.priceblock
+						+e.sale
+							+e.SPAN.oldprice 3 870 P
+							+e.SPAN.pricenew 1 500 Р
+						+e.a(href='#')
+							+e.BUTTON(type='button').buy купить »
+				+b.product
+					+e.IMG.img(src='/images/3.png', alt='')
+					+e.stickernew Новинка
+					+e.caption
+						+e.aparat Физиотерапевтические аппараты
+						+e.name 
+							+e.a(href='#') Концентратор кислородный 7F-1L
+						+e.for Для сеансов профилактической кислородотерапии, приготовления кислородных коктейлей
+					+e.priceblock
+						+e.price 1 500 Р
+						+e.a(href='#')
+							+e.BUTTON(type='button').buy купить »
+				+b.UL.pagination.container
+					+b.prev
+						+b.SPAN Назад
+					+b.active
+						+e.A.link(href='#') 1
+					+b
+						+e.A(href='#') 2
+					+b
+						+e.A(href='#') 3
+					+b
+						+e.A(href='#') 4
+					+b ...
+					+b
+						+e.A(href='#') 14
+					+b
+						+e.A(href='#') 15
+					+b
+						+e.A(href='#') 16
+					+b
+						+e.A(href='#') 17
+					+b.next
+						+b.SPAN Вперед
+	+b.SECTION.container.content
+		+e.h2 Медицинская техника в Пензе и Пензенской области
+		+e.p ЗАО «Медтехника» осуществляет свою деятельность с 1965 года. В течение четырех десятилетий мы обеспечиваем бесперебойное функционирование и обновление парка медицинской техники в лечебно-профилактических учреждениях города и области. В настоящее время ЗАО «Медтехника» представляет собой современное предприятие, обеспечивающее лечебно-профилактические учреждения медицинской техникой, расходными материалами, предоставляющее полный спектр услуг, обеспечивающих бесперебойную и безопасную эксплуатацию медицинской техники. Высококвалифицированные специалисты, технологическое и инструментальное оснащение производства, развитая инфраструктура – все это позволяет выполнять работы на высоком техническом уровне. ЗАО «Медтехника» оказывает услуги населению г. Пензы и Пензенской области, участвует в национальном проекте «Здоровье» и программах модернизации здравоохранения. 

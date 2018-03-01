@@ -202,14 +202,17 @@
     .productblock {
         display: flex;
         justify-content: space-between;
+        margin-top: 15px;
     }
     .product {
         position: relative;
-	    width: 25%;
+	    width: calc(33% - 30px);
 	    background: $white;
 	    text-align: center;
 	    padding: 10px 0 20px 0;
-        margin-right: 30px;
+        margin: 0 30px 30px 0;
+        border: 1px solid #e3e3e3;
+        box-shadow: 1.5px 2.6px 9px rgba(0,0,0,.09);
         &__img {
             height: 204px;
             margin-bottom: 30px;
