@@ -35,17 +35,16 @@
             &__item {
                 padding: 0 15px;
                 list-style-type: none;
-                font-size: $desktop-space;
+                font: 600 12px "Open Sans";
                 text-transform: uppercase;
-                color: $gray;
-                font-weight: $bold;
+                color: $emperor;
                 a {
-                    color: $gray;
+                    color: $emperor;
                 }
             }
     }   
     .headertop {
-        background: $very-light-white;
+        background: $seashell;
     }
     .headerform {
         width: 15%;
@@ -55,8 +54,8 @@
                 background-repeat: no-repeat;
                 background-position: 10px;
                 outline: none;
-                font-size: $desktop-space;
-                border: 1px solid $very-light-white;
+                font-size: 12px;
+                border: 1px solid $seashell;
                 border-radius: 20px;
                 padding: 0 30px;
                 height: 30px;    
@@ -73,28 +72,28 @@
         line-height: 50px;
     }
     .login__item {
-        font-size: $font-base;
+        font-size: 14px;
+        font-weight: 600;
         background-image: url(/images/login.png);
         background-repeat: no-repeat;
         background-position: 16px 19px;
         padding-left: 20px;
-        font-weight: $bold;
         a {
-            color: $very-dark-gray;
+            color: $emperor;
         } 
     }
     .cart {
         width: 205px;
         text-align: center;
-        background: $light-red;
-        font-weight: $bold;
+        background: $carnation;
+        font-weight: 600;
         padding: 0 15px 0 15px;
         &__kol {
             color: $white;
             margin-left: 15px;
         }
         &__item {
-            font-size: $font-base;
+            font-size: 14px;
             background-image: url(/images/cart.png);
             background-repeat: no-repeat;
             background-position: 10px 13px;
@@ -107,29 +106,27 @@
     .contact {
         margin: auto 30px;
         color: $black;
-        font-size: $font-base;
+        font-size: 14px;
         width: 25%;
     }
     .hire {
         margin: 8px auto;
         width: 25%;
         &__color {
-            color: $very-light-gray;
-	        font-size: $desktop-space;
-	        font-weight: $light;
-        }
+            color: $emperor;
+	        font: 300 12px "Open Sans";
+	    }
         &__item {
             display: flex;
         }
         &__p {
-            color: $very-light-gray;
-            font-size: $font-base;
+            color: $emperor;
+            font-size: 14px;
             line-height: 45px;
         }
         &__weight {
-            font-size: $desktop-space;
-            color: $dark-blue;
-            font-weight: $extrabold;
+            font: 700 12px "Open Sans";
+            color: $lochmara;
             background-image: url(/images/prokat.png);
             background-repeat: no-repeat;
             background-position: 1px;
@@ -139,11 +136,10 @@
             color: $white;
             text-transform: uppercase;
             border-radius: 5px;
-            background: $light-red;
+            background: $carnation;
             padding: 10px;
-            font-size: $desktop-space;
+            font: 600 12px "Open Sans";
             text-align: center;
-            font-weight: $bold;
             width: 110px;
             margin-right: 30px;
             cursor: pointer;
@@ -161,36 +157,33 @@
         }
         &__caption {
             display: block;
-            font-size: $extrabig-space;
-            color: $dark-blue;
-            font-weight: $extrabold;
+            font: 700 18px "Open Sans";
+            color: $lochmara;
             line-height: 20px;
             margin-bottom: 15px;
         }
         &__item {
             display: flex;
-            font-size: $big-space;
+            font-size: 16px;
             color: $black;
             list-style-type: none;
             line-height: 25px;
         &:hover a {
             text-decoration: underline;
-            color: $dark-blue;
+            color: $lochmara;
         }
         &:before {
             content: "\203A";
-            font-size: $li-space;
+            font-size: 400 22px "Open Sans";
             margin-right: 10px;
-            color: $dark-blue;
-            font-weight: $regular;
-        }
+            color: $lochmara;
+            }
         }       
     }   
     .catalog {
-        background: $dark-blue;
-        font-size: $big-space;
+        background: $lochmara;
+        font: 600 16px "Open Sans";
         text-transform: uppercase;
-        font-weight: $bold;
         padding: 20px;
         color: $white;
         width: 470px;
@@ -221,38 +214,91 @@
 	        position: absolute;
 	        top: 195px;
 	        left: 0;
-	        background: $light-green;
+	        background: $sushi;
 	        padding: 5px;
-	        font-size: $extrasmall;
-	        color: $white;
-            font-weight: $bold;
+	        font: 600 9px "Open Sans";
+            color: $white;
+            z-index: 9999;
         }
         &__stickerbest {
             position: absolute;
 	        top: 195px;
 	        left: 0;
-	        background: $light-orange;
+	        background: $jaffa;
 	        padding: 5px;
-	        font-size: $extrasmall;
-	        color: $white;
-	        font-weight: $bold;
-        }
+	        font: 600 9px "Open Sans";
+            color: $white;
+            z-index: 9999;
+	    }
         &__stickerhit {
             position: absolute;
 	        top: 195px;
 	        left: 0;
-	        background: $light-purple;
-	        padding: 5px;
-	        font-size: $extrasmall;
-	        color: $white;
-	        font-weight: $bold;
-        }
+	        background: $mediumpurple;
+            padding: 5px;
+            font: 600 9px "Open Sans";
+            color: $white;
+            z-index: 9999;
+	    }
         &__caption {
             padding: 0 20px;
             min-height: 220px;
         }
         &__for {
-            font-size: $big-space;
+            font-size: 16px;
+            color: $black;
+            line-height: 20px;
+        }
+    }
+    .product-subcategory {
+        position: relative;
+	    width: calc(24% - 30px);
+	    background: $white;
+	    text-align: center;
+	    padding: 10px 0 20px 0;
+        margin: 0 30px 30px 0;
+        border: 1px solid #e3e3e3;
+        box-shadow: 1.5px 2.6px 9px rgba(0,0,0,.09);
+        &__img {
+            height: 204px;
+            margin-bottom: 30px;
+        }
+        &__stickernew{
+	        position: absolute;
+	        top: 195px;
+	        left: 0;
+	        background: $sushi;
+	        padding: 5px;
+	        font: 600 9px "Open Sans";
+            color: $white;
+            z-index: 9999;
+        }
+        &__stickerbest {
+            position: absolute;
+	        top: 195px;
+	        left: 0;
+	        background: $jaffa;
+	        padding: 5px;
+	        font: 600 9px "Open Sans";
+            color: $white;
+            z-index: 9999;
+	    }
+        &__stickerhit {
+            position: absolute;
+	        top: 195px;
+	        left: 0;
+	        background: $mediumpurple;
+            padding: 5px;
+            font: 600 9px "Open Sans";
+            color: $white;
+            z-index: 9999;
+	    }
+        &__caption {
+            padding: 0 20px;
+            min-height: 220px;
+        }
+        &__for {
+            font-size: 16px;
             color: $black;
             line-height: 20px;
         }
@@ -265,7 +311,7 @@
 .footerform {
     display: flex;
     &__input {
-        background: $light-gray;
+        background: $emperor;
 	    width: 210px;
 	    outline: none;
 	    border: 0;
@@ -275,8 +321,8 @@
     }
 }
 .footertxt {
-	color: $very-light-gray;
-	font-size: $desktop-space;
+	color: $gray;
+	font-size: 12px;
 }
 }
 @media (min-width: 993px) and (max-width: 1339px) {
@@ -315,12 +361,11 @@
         &__item {
             padding: 0 15px;
             list-style-type: none;
-            font-size: $mobile-space;
+            font: 600 10px "Open Sans";
             text-transform: uppercase;
-            color: $gray;
-            font-weight: $bold;
+            color: $emperor;
             a {
-            color: $gray;
+                color: $emperor;
             }
         }
     }    
@@ -332,15 +377,15 @@
             background-repeat: no-repeat;
             background-position: 10px;
             outline: none;
-            font-size: $mobile-space;
-            border: 1px solid $very-light-white;
+            font-size: 10px;
+            border: 1px solid $seashell;
             border-radius: 20px;
             padding: 0 30px;
             height: 30px;
         }
     }
     .headertop {
-        background: $very-light-white;
+        background: $seashell;
         overflow: hidden;
     }
     .logincart {
@@ -355,28 +400,27 @@
             width: 200px;
         }
         &__item {
-            font-size: $desktop-space;
+            font: 600 12px "Open Sans";
             background-image: url(/images/login.png);
             background-repeat: no-repeat;
             background-position: 16px 19px;
-            padding-left: 20px;
-            font-weight: $bold;
+            padding-left: 20px;            
             a {
-                color: $very-dark-gray;
+                color: $emperor;
             } 
         }
     }    
     .cart {
         width: 165px;
         text-align: center;
-        background: $light-red;
-        font-weight: $bold;
+        background: $carnation;
+        font-weight: 600;
         &__kol {
             color: $white;
             margin-left: 5px;
         }
         &__item {
-            font-size: $desktop-space;
+            font-size: 12px;
             background-image: url(/images/cart.png);
             background-repeat: no-repeat;
             background-position: 10px 13px;
@@ -386,10 +430,9 @@
         }   
     }
     .catalog {
-        background: $dark-blue;
-        font-size: $big-space;
+        background: $lochmara;
+        font-size: 600 16px "Open Sans";
         text-transform: uppercase;
-        font-weight: $bold;
         padding: 20px;
         color: $white;
         width: 470px;
@@ -401,14 +444,14 @@
     .contact {
         margin: 10px;
         color: $black;
-        font-size: $desktop-space;       
+        font-size: 12px;       
     }
     .hire {
         margin: 8px auto;
         width: 25%;
         &__p {
-            color: $very-light-gray;
-            font-size: $desktop-space;
+            color: $emperor;
+            font-size: 12px;
             line-height: 45px;
         }
         &__item {
@@ -418,9 +461,8 @@
             margin-top: 10px;
         }
         &__weight {
-            font-size: $mobile-space;
-            color: $dark-blue;
-            font-weight: $extrabold;
+            font: 700 10px "Open Sans";
+            color: $lochmara;
             background-image: url(/images/prokat.png);
             background-repeat: no-repeat;
             background-position: 1px;
@@ -431,11 +473,10 @@
             color: $white;
             text-transform: uppercase;
             border-radius: 5px;
-            background: $light-red;
+            background: $carnation;
             padding: 10px;
-            font-size: $mobile-space;
+            font: 600 10px "Open Sans";
             text-align: center;
-            font-weight: $bold;
             width: 110px;
             margin-right: 30px;
             cursor: pointer;
@@ -453,28 +494,26 @@
         }
         &__caption {
             display: block;
-            font-size: $big-space;
-            color: $dark-blue;
-            font-weight: $extrabold;
+            font: 700 16px "Open Sans";
+            color: $lochmara;
             line-height: 20px;
             margin-bottom: 15px;
         }
         &__item {
             display: flex;
-            font-size: $font-base;
+            font-size: 14px;
             color: $black;
             list-style-type: none;
             line-height: 25px;
             &:hover a {
                 text-decoration: underline;
-                color: $dark-blue;
+                color: $lochmara;
             }
             &:before {
                 content: "\203A";
-                font-size: $li-space;
+                font: 400 22px "Open Sans";
                 margin-right: 10px;
-                color: $dark-blue;
-                font-weight: $regular;
+                color: $lochmara;                
             }
         }
     }
@@ -499,38 +538,35 @@
             position: absolute;
             top: 165px;
             left: 0;
-            background: $light-green;
+            background: $sushi;
             padding: 5px;
-            font-size: $extrasmall;
+            font: 600 9px "Open Sans";
             color: $white;
-            font-weight: $bold;
         }
         &__stickerbest {
             position: absolute;
             top: 165px;
             left: 0;
-            background: $light-orange;
+            background: $jaffa;
             padding: 5px;
-            font-size: $extrasmall;
+            font: 600 9px "Open Sans";
             color: $white;
-            font-weight: $bold;
         }
         &__stickerhit {
             position: absolute;
             top: 165px;
             left: 0;
-            background: $light-purple;
+            background: $mediumpurple;
             padding: 5px;
-            font-size: $extrasmall;
+            font: 600 9px "Open Sans";
             color: $white;
-            font-weight: $bold; 
         }
         &__caption {
             padding: 0 20px;
             min-height: 220px;
         }
         &__for {
-            font-size: $big-space;
+            font-size: 16px;
             color: $black;
             line-height: 20px;
         }
@@ -543,7 +579,7 @@
     .footerform {
         display: flex;
         &__input {
-            background: $very-light-gray;
+            background: $emperor;
             width: 210px;
             outline: none;
             border: 0;
@@ -553,8 +589,8 @@
         }
     }
     .footertxt {
-        color: $very-light-gray;
-        font-size: $desktop-space;
+        color: $gray;
+        font-size: 12px;
     }
 }
 @media (min-width: 769px) and (max-width: 992px) {
@@ -594,12 +630,11 @@
         &__item {
             padding: 0 15px;
             list-style-type: none;
-            font-size: $desktop-space;
+            font: 600 12px "Open Sans";
             text-transform: uppercase;
-            color: $gray;
-            font-weight: $bold;
+            color: $emperor;
             a {
-                color: $gray;
+                color: $emperor;
             }
         }
     }   
@@ -616,15 +651,15 @@
             background-repeat: no-repeat;
             background-position: 10px;
             outline: none;
-            font-size: $desktop-space;
-            border: 1px solid $very-light-white;
+            font-size: 12px;
+            border: 1px solid $seashell;
             border-radius: 20px;
             padding: 0 30px;
             height: 30px;
         }
     }
     .headertop {
-        background: $very-light-white;
+        background: $seashell;
         overflow: hidden;       
     }    
     .logincart {
@@ -632,27 +667,26 @@
         line-height: 50px;
     }
     .login__item {
-        font-size: $desktop-space;
+        font: 600 12px "Open Sans";
         background-image: url(/images/login.png);
         background-repeat: no-repeat;
         background-position: 16px 19px;
         padding-left: 20px;
-        font-weight: $bold;
         a {
-            color: $very-dark-gray;
+            color: $emperor;
         } 
     }
     .cart {
         width: 165px;
         text-align: center;
-        background: $light-red;
-        font-weight: $bold;
+        background: $carnation;
+        font-weight: 600;
         &__kol {
             color: $white;
             margin-left: 5px;
         }
         &__item {
-            font-size: $desktop-space;
+            font-size: 12px;
             background-image: url(/images/cart.png);
             background-repeat: no-repeat;
             background-position: 10px 13px;
@@ -662,10 +696,9 @@
         }
     }   
     .catalog {
-        background: $dark-blue;
-        font-size: $big-space;
+        background: $lochmara;
+        font: 600 16px "Open Sans";
         text-transform: uppercase;
-        font-weight: $bold;
         padding: 20px;
         color: $white;
         width: 470px;
@@ -677,15 +710,15 @@
     .contact {
         margin: 10px;
         color: $black;
-        font-size: $font-base;
+        font-size: 12px;
         order: 3;   
     }
     .hire {
         margin: 8px auto;
         order: 2;
         &__p {
-            color: $very-light-gray;
-            font-size: $font-base;
+            color: $emperor;
+            font-size: 12px;
             line-height: 45px;
         }
         &__item {
@@ -695,9 +728,8 @@
             margin-top: -10px;
         }
         &__weight {
-            font-size: $font-base;
-            color: $dark-blue;
-            font-weight: $extrabold;
+            font-size: 700 12px "Open Sans";
+            color: $lochmara;
             background-image: url(/images/prokat.png);
             background-repeat: no-repeat;
             background-position: 1px;
@@ -708,11 +740,10 @@
             color: $white;
             text-transform: uppercase;
             border-radius: 5px;
-            background: $light-red;
+            background: $carnation;
             padding: 10px;
-            font-size: $desktop-space;
+            font: 600 12px "Open Sans";
             text-align: center;
-            font-weight: $bold;
             width: 110px;
             margin-right: 30px;
             cursor: pointer;
@@ -730,28 +761,26 @@
         }
         &__caption {
             display: block;
-            font-size: $big-space;
-            color: $dark-blue;
-            font-weight: $extrabold;
+            font: 700 16px "Open Sans";
+            color: $lochmara;
             line-height: 20px;
             margin-bottom: 15px;
         }
         &__item {
             display: flex;
-            font-size: $font-base;
+            font-size: 12px;
             color: $black;
             list-style-type: none;
             line-height: 25px;
             &:hover a {
                 text-decoration: underline;
-                color: $dark-blue;
+                color: $lochmara;
             }
             &:before {
                 content: "\203A";
-                font-size: $li-space;
+                font: 400 22px "Open Sans";
                 margin-right: 10px;
-                color: $dark-blue;
-                font-weight: $regular;
+                color: $lochmara;
             }
         }
     }
@@ -776,38 +805,35 @@
             position: absolute;
             top: 165px;
             left: 0;
-            background: $light-green;
+            background: $sushi;
             padding: 5px;
-            font-size: $extrasmall;
+            font: 700 9px "Open Sans";
             color: $white;
-            font-weight: $bold;
         }
         &__stickerbest {
             position: absolute;
             top: 165px;
             left: 0;
-            background: $light-orange;
+            background: $jaffa;
             padding: 5px;
-            font-size: $extrasmall;
-            color: $white;
-            font-weight: $bold;
+            font: 700 9px "Open Sans";
+            color: $white;            
         }
         &__stickerhit {
             position: absolute;
             top: 165px;
             left: 0;
-            background: $light-purple;
+            background: $mediumpurple;
             padding: 5px;
-            font-size: $extrasmall;
-            color: $white;
-            font-weight: $bold;
+            font: 700 9px "Open Sans";
+            color: $white;            
         }
         &__caption {
             padding: 0 20px;
             min-height: 220px;
         }
         &__for {
-            font-size: $big-space;
+            font-size: 16px;
             color: $black;
             line-height: 20px;
         }
@@ -820,7 +846,7 @@
     .footerform {
         display: flex;
         &__input {
-            background: $very-light-gray;
+            background: $emperor;
             width: 210px;
             outline: none;
             border: 0;
@@ -830,8 +856,8 @@
         }
     }
     .footertxt {
-        color: $very-light-gray;
-        font-size: $desktop-space;
+        color: $gray;
+        font-size: 12px;
     }
 }
 @media (min-width: 320px) and (max-width: 768px) {
@@ -868,22 +894,21 @@
         &__top {
             display: none;
             position: absolute;
-            background: #fff;
+            background: $white;
             padding: 15px;
         }
         &__item {
             padding: 5px;
             list-style-type: none;
-            font-size: $desktop-space;
+            font: 600 12px "Open Sans";
             text-transform: uppercase;
-            color: $gray;
-            font-weight: $bold;
+            color: $emperor;
             a {
-                color: $gray;
+                color: $emperor;
             }
         }
         &__btn {
-            background: #fff;
+            background: $white;
             border: 0;
             cursor: pointer;
         }
@@ -899,15 +924,15 @@
             background-repeat: no-repeat;
             background-position: 10px;
             outline: none;
-            font-size: $mobile-space;
-            border: 1px solid $very-light-white;
+            font-size: 10px;
+            border: 1px solid $seashell;
             border-radius: 20px;
             padding: 0 30px;
             height: 30px;
         }
     }
     .headertop {
-        background: $very-light-white;
+        background: $seashell;
         overflow: hidden;
     }   
     .logincart {
@@ -915,27 +940,26 @@
         line-height: 50px;
     }
     .login__item {
-        font-size: $desktop-space;
+        font: 600 12px "Open Sans";
         background-image: url(/images/login.png);
         background-repeat: no-repeat;
         background-position: 16px 19px;
         padding-left: 20px;
-        font-weight: $bold;
         a {
-            color: $very-dark-gray;
+            color: $emperor;
         } 
     }
     .cart {
         width: 165px;
         text-align: center;
-        background: $light-red;
-        font-weight: $bold;
+        background: $carnation;
+        font-weight: 600;
         &__kol {
             color: $white;
             margin-left: 5px;
         }
         &__item {
-            font-size: $desktop-space;
+            font-size: 12px;
             background-image: url(/images/cart.png);
             background-repeat: no-repeat;
             background-position: 10px 13px;
@@ -945,10 +969,9 @@
         }
     }    
     .catalog {
-        background: $dark-blue;
-        font-size: $desktop-space;
+        background: $lochmara;
+        font: 600 12px "Open Sans";
         text-transform: uppercase;
-        font-weight: $bold;
         padding: 20px;
         color: $white;
         margin: 0 auto 30px;
@@ -959,14 +982,14 @@
     .contact {
         margin: 10px auto;
         color: $black;
-        font-size: $desktop-space;       
+        font-size: 12px;       
     }
     .hire {
         margin: 8px auto 20px;
         width: 290px;
         &__p {
-            color: $very-light-gray;
-            font-size: $desktop-space;
+            color: $emperor;
+            font-size: 12px;
             line-height: 45px;
         }
         &__item {
@@ -976,9 +999,8 @@
             margin-top: -10px;
         }
         &__weight {
-            font-size: $mobile-space;
-            color: $dark-blue;
-            font-weight: $extrabold;
+            font: 700 10px "Open Sans";
+            color: $lochmara;
             background-image: url(/images/prokat.png);
             background-repeat: no-repeat;
             background-position: 1px;
@@ -989,11 +1011,10 @@
             color: $white;
             text-transform: uppercase;
             border-radius: 5px;
-            background: $light-red;
+            background: $carnation;
             padding: 10px;
-            font-size: $mobile-space;
+            font: 600 10px "Open Sans";
             text-align: center;
-            font-weight: $bold;
             width: 110px;
             margin-right: 30px;
             cursor: pointer;
@@ -1011,28 +1032,26 @@
         }
         &__caption {
             display: block;
-            font-size: $big-space;
-            color: $dark-blue;
-            font-weight: $extrabold;
+            font: 700 16px "Open Sans";
+            color: $lochmara;
             line-height: 20px;
             margin-bottom: 15px;
         }
         &__item {
             display: flex;
-            font-size: $font-base;
+            font-size: 12px;
             color: $black;
             list-style-type: none;
             line-height: 25px;
             &:hover a {
                 text-decoration: underline;
-                color: $dark-blue;
+                color: $lochmara;
             }
             &:before {
                 content: "\203A";
-                font-size: $li-space;
+                font: 400 22px "Open Sans";
                 margin-right: 10px;
-                color: $dark-blue;
-                font-weight: $regular;
+                color: $lochmara;                
             }
         }
     }    
@@ -1057,38 +1076,35 @@
             position: absolute;
             top: 165px;
             left: 0;
-            background: $light-green;
+            background: $sushi;
             padding: 5px;
-            font-size: $extrasmall;
+            font: 600 9px "Open Sans";
             color: $white;
-            font-weight: $bold;
         }
         &__stickerbest {
             position: absolute;
             top: 165px;
             left: 0;
-            background: $light-orange;
+            background: $jaffa;
             padding: 5px;
-            font-size: $extrasmall;
+            font: 600 9px "Open Sans";
             color: $white;
-            font-weight: $bold;
         }
         &__stickerhit {
             position: absolute;
             top: 165px;
             left: 0;
-            background: $light-purple;
+            background: $mediumpurple;
             padding: 5px;
-            font-size: $extrasmall;
+            font: 600 9px "Open Sans";
             color: $white;
-            font-weight: $bold;
         }
         &__caption {
             padding: 0 20px;
             min-height: 220px;
         }
         &__for {
-            font-size: $big-space;
+            font-size: 16px;
             color: $black;
             line-height: 20px;
         }
@@ -1103,7 +1119,7 @@
         display: flex;
         margin-top: 15px;
         &__input {
-            background: $very-light-gray;
+            background: $emperor;
             width: 110px;
             outline: none;
             border: 0;
@@ -1116,8 +1132,8 @@
         margin-top :15px;
     }
     .footertxt {
-        color: $very-light-gray;
-        font-size: $desktop-space;
+        color: $gray;
+        font-size: 12px;
         padding: 10px;
     }
 }

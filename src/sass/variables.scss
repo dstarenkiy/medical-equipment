@@ -1,5 +1,6 @@
 //font-family
 $base-font: 'Open Sans', sans-serif;
+$base-size: 12px;
 
 //@media
 $desktop: 1340px;
@@ -12,41 +13,24 @@ $md: 992px;
 $lg: 1320px;
 $gutter: 15px;
 
-//font-weight
-$light: 300;
-$regular: 400;
-$bold: 600;
-$extrabold: 700; 
-
-//font-size
-$extrasmall: 9px;
-$mobile-space: 10px;
-$desktop-space: 12px;
-$font-base: 14px;
-$font-cat: 15px;
-$big-space: 16px;
-$extrabig-space: 18px;
-$li-space: 22px;
-$h1-space: 30px;
-$h2-space: 36px;
-
 //color
 $black: #000000;
 $white: #ffffff;
-$very-light-white: #f1f1f1;
-$light-red: #f46464;
-$gray: #4f4f4f;
-$very-dark-gray: #373737;
-$dark-gray: #595959;
-$light-gray: #8a8a8a;
-$very-light-gray: #9b9a9a;
-$very-lighten-gray: #cccccc;
-$dark-blue: #0889cc;
-$very-light-blue: #41b2d7;
-$very-lighten-blue: #a4d4ec;
-$super-light-blue: #e8f5f9;
-$light-blue: #33a4d9;
-$light-green: #8dbe47;
-$light-orange: #f49639;
-$dark-orange: #e98522;
-$light-purple: #a073eb;
+$seashell: #f1f1f1;
+$carnation: #f46464;
+$silver: #cccccc;
+$emperor: #4f4f4f;
+$minshaft: #373737;
+$scorpion: #595959;
+$gray: #8a8a8a;
+$dustygray: #9b9a9a;
+$mercury: #e3e3e3;
+$lochmara: #0889cc;
+$scooter: #41b2d7;
+$blizzard: #a4d4ec;
+$polar: #e8f5f9;
+$curious: #33a4d9;
+$sushi: #8dbe47;
+$jaffa: #f49639;
+$zest: #e98522;
+$mediumpurple: #a073eb;

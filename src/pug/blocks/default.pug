@@ -1,5 +1,5 @@
 include ../bemto/bemto.pug
-include ../blocks/mixins.pug
+include ../mixin/mixins.pug
 doctype html
 html
 	include ../blocks/head.pug
@@ -8,7 +8,4 @@ html
 		+b.MAIN.main
 			block .main
 		include ../blocks/footer.pug
-		script(src='/js/swiper.min.js')
 		script(src='/js/libs.js')
-		script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js')
-		script(src='/jquery/catalog.js')

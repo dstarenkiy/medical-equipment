@@ -1,10 +1,9 @@
 @import 'variables';
 body {
-	font-family: $base-font;
-	font-size: $big-space;
+	font: 400 16px "Open Sans";	
 	line-height: 18px;
-	color: $black;
-	font-weight: $regular;
+	color: $black;	
+	font-size: $base-size;
 }
 .header {
 	flex: 0 0 auto;
@@ -20,7 +19,7 @@ body {
 	max-width: 100%; 
 	height: 1px; 
 	margin: 20px 0 30px; 
-	background-color: #000;
+	background-color: $black;
 }
 .asortiment-catalog {
 	display: flex; 
@@ -41,46 +40,42 @@ body {
 		}
 		&__caption {
 			display: block;
-			font-size: $extrabig-space;
-			color: $dark-blue;
-			font-weight: $extrabold;
+			font: 700 16px "Open Sans";		
+			color: $lochmara;			
 			line-height: 20px;
 			margin-bottom: 15px;
 		}		
 		&__a {
 			&:hover {
 				text-decoration: underline; 
-				color: $dark-blue;
+				color: $lochmara;
 			}
 		}
 		&__li {
 			display: flex;
 			position: relative;
 			padding-left: 15px;
-            font-size: $big-space;
+            font-size: 16px;
             color: $black;
             list-style-type: none;
 			line-height: 25px;		
 		&:before {
 			content: ">";
-			font-size: $font-base;
+			font: 400 14px "Open Sans";
 			position: absolute;
-			color: $dark-blue;
-			font-weight: $regular;
+			color: $lochmara;
 			left: 0;
 			top: 0;
 			}
 		}
 }
 .tumbler {
-	margin-top: 10px; 
-	font-style: italic; 
-	font-weight: $bold; 
+	margin-top: 10px;
+	font: 600 italic 12px "Open Sans";	 
 	margin-left: 15px; 
 	white-space: nowrap; 
-	color: $dark-blue; 
-	border-bottom: 1px dashed $dark-blue; 
-	font-size: $desktop-space;
+	color: $lochmara; 
+	border-bottom: 1px dashed $lochmara;
 }
 .content {
 	padding: 20px;
@@ -91,19 +86,17 @@ body {
 		text-align: center;
 		color: $gray;
 		text-transform: uppercase;
-		font-size: $font-base;
-		font-weight: $regular;
+		font: 400 14px "Open Sans";		
 	}
 	&__h2 {
 		text-align: center;
-		font-size: $h2-space;
+		font: 300 36px "Open Sans";
 		color: $black;
 		padding: 50px 0 20px 0;
-		font-weight: 300;
 	}
 	&__p {
 		text-align: center;
-		font-size: $big-space;
+		font-size: 16px;
 		margin-bottom: 20px;
 		line-height: 20px;
 	}
@@ -113,19 +106,19 @@ body {
 	line-height: 25px;
 	}
 	&__item {
-		font-weight: $bold;	
-		color: $dark-blue;
-		border-bottom: 1px solid $dark-blue;
+		font-weight: 600;	
+		color: $lochmara;
+		border-bottom: 1px solid $lochmara;
 		line-height: 25px;
 	}
 	&__color {
-		color: $very-light-gray;
+		color: $black;
 	}
 }
 .product {
 	&__aparat {
-		font-size: $desktop-space;
-		color: $light-gray;
+		font-size: 12px;
+		color: $gray;
 		margin-bottom: 15px;
 	}
 	&__name {
@@ -133,44 +126,87 @@ body {
 	}
 	&__a {
 		width: 240px;
-		font-size: $extrabig-space;
-		color: $dark-blue;
-		font-weight: $extrabold;
+		font: 700 18px "Open Sans";		
+		color: $lochmara;		
 		line-height: 20px;
 	}
 	&__price {
-		font-size: $extrabig-space;
-		color: $black;
-		font-weight: $bold;
+		font: 600 18px "Open Sans";		
+		color: $black;		
 	}
 	&__pricenew {
-		font-size: $extrabig-space;
-		color: $black;
-		font-weight: $bold;
+		font: 600 18px "Open Sans";		
+		color: $black;		
 		vertical-align: text-bottom;
 	}
 	&__oldprice {
-		font-size: $desktop-space;
-		color: $light-orange;
-		font-weight: $bold;
+		font: 600 12px "Open Sans";
+		color: $jaffa;
 		margin-right: 15px;
 		text-decoration: line-through;
 	}
 	&__priceno {
-		font-size: $font-base;
+		font: 600 12px "Open Sans";
 		color: $black;
-		font-weight: $bold;
 	}
 	&__buy {
-		font-size: $desktop-space;
+		font: 600 12px "Open Sans";
 		color: $white;
 		text-transform: uppercase;
 		text-align: center;
 		width: 100px;
 		margin: auto;
-		background: $light-red;
+		background: $carnation;
 		padding: 10px;
-		font-weight: $bold;
+		border-radius: 3px;
+		margin-top: 20px;
+		border: 0;
+		cursor: pointer;	
+	}
+}
+.product-subcategory {
+	&__aparat {
+		font-size: 12px;
+		color: $gray;
+		margin-bottom: 15px;
+	}
+	&__name {
+		margin: 0 auto 20px;
+	}
+	&__a {
+		width: 240px;
+		font: 700 18px "Open Sans";		
+		color: $lochmara;		
+		line-height: 20px;
+	}
+	&__price {
+		font: 600 18px "Open Sans";		
+		color: $black;		
+	}
+	&__pricenew {
+		font: 600 18px "Open Sans";		
+		color: $black;		
+		vertical-align: text-bottom;
+	}
+	&__oldprice {
+		font: 600 12px "Open Sans";
+		color: $jaffa;
+		margin-right: 15px;
+		text-decoration: line-through;
+	}
+	&__priceno {
+		font: 600 12px "Open Sans";
+		color: $black;
+	}
+	&__buy {
+		font: 600 12px "Open Sans";
+		color: $white;
+		text-transform: uppercase;
+		text-align: center;
+		width: 100px;
+		margin: auto;
+		background: $carnation;
+		padding: 10px;
 		border-radius: 3px;
 		margin-top: 20px;
 		border: 0;
@@ -191,9 +227,8 @@ body {
 	text-align: center;
 	margin-bottom: 25px;
 	&__item a {
-		font-size: $font-base;
-		color: $dark-blue;
-		font-weight: $bold;
+		font: 600 14px "Open Sans";		
+		color: $lochmara;		
 		text-decoration: underline;
 		margin-right: 30px;
 	}
@@ -246,22 +281,21 @@ a {
 	font-size: 12px;
 	color: $black;
 	opacity: 1;
-	background: $dark-blue;
+	background: $lochmara;
 	margin: 15px 10px;
   }
   .swiper-pagination-bullet-active {
 	color: $white;
-	background: $light-red;
+	background: $carnation;
   }
   .swiper-slide__item {
 	  position: absolute;
 	  width: 560px;
+	  font: 300 36px "Open Sans";
 	  background-color: rgba(55,174,213,0.6);
-	  font-size: $h2-space;
-	  text-align: center;
+	   text-align: center;
 	  padding: 15px;
 	  color: $white;
-	  font-weight: $light;
 	  line-height: 45px;
 	  padding: 50px 80px;
 	  top: 50px;
@@ -270,7 +304,7 @@ a {
 	width: 100%;  
 }
 .catalog-more {
-	font-size: $font-base;
+	font-size: 14px;
 	color: $gray;
 	text-align: center;
 	margin: 0 auto 50px;
@@ -291,25 +325,24 @@ a {
 	margin: 0 -15px 30px -15px;
 }
 .footer {
-	background: $very-dark-gray;
+	background: $minshaft;
 	padding: 20px;
 }
 .footercontact__txt {
-	color: $very-lighten-gray;
-	font-size: $desktop-space;
+	color: $gray;
+	font-size: 12px;
 	line-height: 20px;	
 }
 .footersearch__txt {
-	color: $very-lighten-gray;
-	font-size: $mobile-space;
+	color: $gray;
+	font-size: 10px;
 	margin: 8px;
 }
 .footerform {
 	&__btn {
-		font-size: $extrasmall;
-		color: $very-lighten-gray;
-		background: $dark-gray;
-		font-weight: bold;
+		font: 600 9px "Open Sans";
+		color: $silver;
+		background: $scorpion;		
 		width: 67px;
 		height: 27px;
 		border: 0;
@@ -317,15 +350,15 @@ a {
 		cursor: pointer;
 	}
 	&__label {
-		color: $very-lighten-gray;
-		font-size: $mobile-space;
+		color: $gray;
+		font-size: 9px;
 		margin: 8px;
 	}	
 }
 .design {
 	&__txt {
-		color: $very-light-gray;
-		font-size: $desktop-space;
+		color: $gray;
+		font-size: 12px;
 	}
 	&__img {
 		vertical-align: middle;
@@ -339,7 +372,7 @@ a {
 	margin: 0 0 14px 0;
 	color: $black;
 	&__item {
-		font-size: $desktop-space;
+		font-size: 12px;
 		color: $black;
 	}
 	&__link {
@@ -360,34 +393,48 @@ a {
 	margin-right: 15px;
 	margin-left: 15px;
 	&__menu {
-		background-color: $very-light-blue;
+		background-color: $scooter;
 		color: $white;
-		font-size: $desktop-space;
-		font-weight: $bold;
+		font: 600 12px "Open Sans";
 		line-height: 50px;
 		padding: 0 25px;
 		text-transform: uppercase;
 		text-decoration: none;
 		height: 50px;
 	}
+	&__menuback {
+		background-color: $scooter;
+		color: $white;
+		font: 600 12px "Open Sans";
+		line-height: 50px;
+		padding: 0 25px;
+		text-transform: uppercase;
+		text-decoration: none;
+		height: 50px;
+		&:before{
+			font-size: 18px;
+			content: "\2190";
+			margin-right: 10px;
+			}
+	}
 	&__nav {
-		border: 1px solid $very-lighten-blue;
-		background-color: $super-light-blue;
+		border: 1px solid $blizzard;
+		background-color: $polar;
 	}
 	&__item {
 		position: relative;
-		color: $light-blue;
+		color: $scooter;
 		&:hover{
 			color:$white
 		}
 	}
 	&__link {
 		display: block;
-		color: $gray;
-		font-size: $font-cat;
+		color: $emperor;
+		font-size: 15px;
 		padding: 15px 30px 15px 25px;	
 		&:hover {
-			background-color: $light-red;
+			background-color: $carnation;
 			color: $white;
 		}
 	}
@@ -430,15 +477,21 @@ a {
 	margin-left: 15px;
 	margin-right: 15px;
 }
+.subcategoryblock {
+	width: calc(100% - 30px);
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 15px;
+	margin-right: 15px;
+}
 .button-group {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: stretch;
 	&__show {
-		font-size: $desktop-space;
-		color: $very-light-gray;
-		font-weight: $regular;
+		font: 400 12px "Open Sans";
+		color: $silver;
 		margin-top: 20px;
 	}
 }
@@ -448,24 +501,22 @@ a {
 	display: block;
 	margin-left: auto;
 	text-align: center;
-	background: $very-light-white;
+	background: $seashell;
 	box-shadow: 1.3px 1.5px 14px rgba(42,88,123,.33);
 	margin-bottom: 20px;
 	cursor: pointer;
 	&__name {
-		font-size: $desktop-space;
-		color: $very-light-gray;
-		font-weight: $regular;
+		font: 400 12px "Open Sans";
+		color: $dustygray;
 		line-height: 44px;
 	}
 	&__position {
 		display:inline-block;
 		text-transform:lowercase;
-		color:#0889cc;
+		color: $lochmara;
 		position:relative;
-		font-size: $desktop-space;
-		color: $light-blue;
-		font-weight: $extrabold;
+		font: 700 12px "Open Sans";
+		color: $scooter;
 		&:after{
 			transition:all .2s ease-in;
 			position:absolute;
@@ -490,43 +541,47 @@ a {
 .pagination {
 	display: flex;
 	justify-content: center;
+	margin-bottom: 30px;
 }
 .pagination li.prev {
 	margin-right: 40px;
-	background: $light-blue;
+	background: $scooter;
 	color: $white;
 	width: 150px;
 	height: 40px;
 	line-height: 40px;
 	text-align: center;
 	border-radius: 5px;
-	font-size: $font-base;
+	font-size: 14px;
 	border: 1px solid #e3e3e3;
 }
-.pagination li.prev a:before, .pagination li.prev span:before {
-	font-size: $extrabig-space;
-	content: "\2190";
-	margin-right: 10px;
+.pagination li.prev {
+	&:before {
+		font-size: 18px;
+		content: "\2190";
+		margin-right: 10px;
+	}
 }
 .pagination li.next {
 	margin-left: 40px;
-	background: $light-blue;
+	background: $scooter;
 	color: $white;
 	width: 150px;
 	height: 40px;
 	line-height: 40px;
 	text-align: center;
 	border-radius: 5px;
-	font-size: $font-base;
-	border: 1px solid #e3e3e3;
+	font-size: 14px;
+	border: 1px solid $mercury;
+	&:after {
+		font-size: 18px;
+		content: "\2192";
+		margin-left: 10px;
+	}
 }
-.pagination li.next a:after, .pagination li.next span:after {
-	font-size: $extrabig-space;
-	content: "\2192";
-	margin-left: 10px;
-}
+
 .pagination li.active {
-	background: $light-blue;
+	background: $scooter;
 	width: 40px;
 	height: 40px;
 	color: $white;
@@ -539,7 +594,7 @@ a {
 	color: $white;
 }
 .pagination li {
-	background: $super-light-blue;
+	background: $polar;
 	width: 40px;
 	height: 40px;
 	color: $black;
@@ -549,7 +604,7 @@ a {
 	margin-right: 10px;
 	border: 1px solid #e3e3e3;
 	&:hover {
-		background-color: $light-red;
+		background-color: $carnation;
 		color: $white;
 	}
 	&:hover a {
@@ -577,20 +632,18 @@ a {
 	}
 }
 .subcat {
-	font-size: $desktop-space;
-	color: $light-gray;
+	font-size: 12px;
+	color: $silver;
 	padding: 20px 0 20px;
 }
 .subcat span a {
-	font-size: $desktop-space;
-	color: $light-blue;
-	font-weight: $extrabold;
+	font: 700 12px "Open Sans";
+	color: $scooter;
 	cursor: pointer;
 }
 .certificate {
-	font-size: $big-space;
+	font: 400 16px "Open Sans";
 	color: $black;
-	font-weight: $regular;
 	text-transform: uppercase;
 	padding: 10px 0 30px;
 	line-height: 25px;
@@ -598,28 +651,27 @@ a {
 .price {
 	padding: 0 0 40px;
 	&__oldprice {
-		font-size: $extrabig-space;
-		color: $dark-orange;
+		font-size: 18px;
+		color: $zest;
 		text-decoration: line-through;
 	}
 	&__price {
 		margin-left: 20px;
-		font-size: $h2-space;
+		font-size: 36px;
 		color: $black;
 		text-decoration: none;
 	}
 }
 .buy {
-	font-size: $big-space;
+	font: 400 16px "Open Sans";
 	color: $white;
 	text-transform: uppercase;
 	text-align: center;
 	width: 170px;
 	height: 70px;
 	margin: auto;
-	background: $light-red;
-	padding: 10px;
-	font-weight: $regular;
+	background: $carnation;
+	padding: 10px;	
 	border: 0;
 	cursor: pointer;
 }
@@ -643,20 +695,20 @@ table td {
 	}
 	&__characteristics tr:nth-child(even) {
 		width: 100%;
-		background-color: $very-light-white;
+		background-color: $seashell;
 	}
 	&__advantages {
 		padding: 15px;
 	}
 	&__item {
 		margin-bottom: 13px;
-		font-size: $big-space;
+		font-size: 16px;
 		color: $black;
 		&:before {
 			content: "\003E";
-			color: $light-blue;
+			color: $scooter;
 			margin-right: 10px;
-			font-weight: $bold;
+			font-weight: 600;
 
 		}
 	}
@@ -668,7 +720,7 @@ table td {
 	margin-bottom: 5px;
 }
 .teh-doc a{
-	color: $light-blue;
-	font-weight: $extrabold;
+	color: $scooter;
+	font-weight: 700;
 	text-decoration: underline;
 }
