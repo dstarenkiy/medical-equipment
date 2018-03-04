@@ -10,10 +10,44 @@ block .main
 		+b.row
 			+b.ASIDE.aside
 				+e.menu Каталог
-				+e.UL.nav
+				+e.UL.nav#js-asidemenu
 					+e.item 
 						+e.A.link(href='#') Массажные столы Vernam
 						+e.B.caret
+						+e.UL.nav-hidden#js-asidemenuhidden
+							+e.item-hidden 
+								+e.A(href='#') Микроскопы 
+								+e.SPAN.quantity (1)
+							+e.item-hidden 
+								+e.A(href='#') Холодильники										
+								+e.SPAN.quantity (22)
+							+e.item-hidden 
+								+e.A(href='#') Термометры, Ареометры, Измерители 										
+								+e.SPAN.quantity (1)
+							+e.item-hidden 
+								+e.A(href='#') Часы песочные								
+								+e.SPAN.quantity (28)
+							+e.item-hidden 
+								+e.A(href='#') Гигрометры, Барометры 								
+								+e.SPAN.quantity (8)
+							+e.item-hidden 
+								+e.A(href='#') Алкометры и принадлежности								
+								+e.SPAN.quantity (15)
+							+e.item-hidden 
+								+e.A(href='#') Оборудование								
+								+e.SPAN.quantity (3)
+							+e.item-hidden 
+								+e.A(href='#') Тест-полоски 								
+								+e.SPAN.quantity (28)
+							+e.item-hidden 
+								+e.A(href='#') Стекла 								
+								+e.SPAN.quantity (8)
+							+e.item-hidden 
+								+e.A(href='#') Микроскопы 								
+								+e.SPAN.quantity (214)								
+							+e.item-hidden 
+								+e.A(href='#') Лабораторная посуда и принадлежности								
+								+e.SPAN.quantity (3)
 					+e.item 
 						+e.A.link(href='#') Товары для дома
 						+e.B.caret
@@ -66,10 +100,16 @@ block .main
 				+b.button-group
 					+e.container
 						+e.show Показано товаров: 2 010
-					+b.sorting
+					+b.sorting#js-sorting
 						+e.container
 							+e.SPAN.name Сортировать по: 
 							+e.SPAN.position наименованию
+							+e.UL.sorting-hidden
+								+e.item популярности
+								+e.item алфавиту
+								+e.item новинки
+								+e.item лучшая цена
+								+e.item хит продаж
 				+b.product
 					+e.IMG.img(src='/images/1.png', alt='')
 					+e.stickernew Новинка

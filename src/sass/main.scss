@@ -417,6 +417,19 @@ a {
 			margin-right: 10px;
 			}
 	}
+	&__nav-hidden {
+		display: flex;
+		flex-wrap: wrap;
+		position: absolute;
+		top: 0;
+		left: 305px;
+		width: 770px;
+		height: auto;
+		z-index: 99999;
+		padding: 20px;
+		background: #fff;
+		box-shadow: 1.5px 2.6px 9px rgba(0,0,0,.09);
+	}
 	&__nav {
 		border: 1px solid $blizzard;
 		background-color: $polar;
@@ -428,6 +441,30 @@ a {
 			color:$white
 		}
 	}
+	&__quantity {
+		color: $aluminum;
+		font: 400 12px "Open Sans";
+		margin-left: 20px;
+	}
+	&__item-hidden {
+		display: flex;
+		justify-content: space-between;
+		width: 290px;
+		position: relative;
+		margin-right: 30px;
+		color: $lochmara;
+		font: 600 14px "Open Sans";
+		padding: 20px;
+		border-bottom: 1px solid $aluminum;
+		&:hover a {
+			color:$carnation;
+			text-decoration: underline;
+			cursor: pointer;
+		}
+		a {
+			color: $lochmara;
+		}		
+	}	
 	&__link {
 		display: block;
 		color: $emperor;
@@ -462,12 +499,31 @@ a {
 			top:23px;
 			right:10px;			
 			transform: translate(-75%,-50%) rotate(45deg);			
+		}		
+	}
+}
+.sublist {
+	position: relative;
+	top: 50px;
+	display: block;
+	&__item {
+	color: $aluminum;
+	font: 400 12px "Open Sans";
+		&:before {
+			content: ">";
+			margin-right: 15px;
+			color: $aluminum;
+			font-size: 12px;
 		}
 		&:hover {
-			border:2px solid currentColor;
-			border-bottom:0;
-			border-left:0;
+			color: $scooter;
+			text-decoration: underline;
 		}
+	}
+	&__quantity {
+		color: $aluminum;
+		font: 400 12px "Open Sans";
+		margin-left: 20px;
 	}
 }
 .categoryblock {
@@ -534,7 +590,44 @@ a {
 			border:2px solid currentColor;
 			border-bottom:0;
 			border-left:0;
-			right:-18px;
+			right:-18px;					
+		}
+		&:hover:after {
+			transition:all .2s ease-in;
+			position:absolute;
+			top:70%;
+			display:block;
+			width:6px;
+			height:6px;
+			content:"";
+			-webkit-transform:translate(-50%,-75%) rotate(314deg);
+			-ms-transform:translate(-50%,-75%) rotate(315deg);
+			transform:translate(-50%,-75%) rotate(315deg);
+			-webkit-transform-origin:center;
+			-ms-transform-origin:center;
+			transform-origin:center;
+			border:2px solid currentColor;
+			border-bottom:0;
+			border-left:0;
+			right:-18px;	
+		}	
+	}
+	&__sorting-hidden {
+		display: none;
+		position: relative;
+		z-index: 99999;
+		background: $white;
+		box-shadow: 1.3px 1.5px 14px rgba(42,88,123,.33);
+		text-align: right;
+	}
+	&__item {
+		padding: 0 25px 0 0;
+		font: 400 12px "Open Sans";
+		height: 45px;
+		line-height: 45px;
+		&:hover {
+			background: $carnation;
+			color: $white;
 		}
 	}
 }
