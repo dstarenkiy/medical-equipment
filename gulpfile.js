@@ -25,7 +25,7 @@ gulp.task('jscommon', function() {
 gulp.task('pug', function () {
     return gulp.src('src/pug/pages/*.pug')
     .pipe(gp.plumber())
-    .pipe(gp.pug({}))
+    .pipe(gp.pug({})) 
     .pipe(gulp.dest('build/'))
     .pipe(browserSync.stream());
 });  
