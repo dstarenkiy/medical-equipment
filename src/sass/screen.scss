@@ -145,41 +145,7 @@
             cursor: pointer;
             border: 0;
         }
-    }   
-    .assortiment {
-        display: flex;
-        justify-content: space-between;
-        margin: 0 -15px 30px -15px;
-        &__column {
-            display: flex;
-            width: 25%;
-            margin-right: 30px;
-        }
-        &__caption {
-            display: block;
-            font: 700 18px "Open Sans";
-            color: $lochmara;
-            line-height: 20px;
-            margin-bottom: 15px;
-        }
-        &__item {
-            display: flex;
-            font-size: 16px;
-            color: $black;
-            list-style-type: none;
-            line-height: 25px;
-        &:hover a {
-            text-decoration: underline;
-            color: $lochmara;
-        }
-        &:before {
-            content: "\203A";
-            font-size: 400 22px "Open Sans";
-            margin-right: 10px;
-            color: $lochmara;
-            }
-        }       
-    }   
+    }  
     .catalog {
         background: $lochmara;
         font: 600 16px "Open Sans";
@@ -482,41 +448,7 @@
             cursor: pointer;
             border: 0;
         }
-    }
-    .assortiment {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        &__column {
-            display: flex;
-            flex: auto;
-            margin: 15px 30px;
-        }
-        &__caption {
-            display: block;
-            font: 700 16px "Open Sans";
-            color: $lochmara;
-            line-height: 20px;
-            margin-bottom: 15px;
-        }
-        &__item {
-            display: flex;
-            font-size: 14px;
-            color: $black;
-            list-style-type: none;
-            line-height: 25px;
-            &:hover a {
-                text-decoration: underline;
-                color: $lochmara;
-            }
-            &:before {
-                content: "\203A";
-                font: 400 22px "Open Sans";
-                margin-right: 10px;
-                color: $lochmara;                
-            }
-        }
-    }
+    }    
     .productblock {
         display: flex;
         justify-content: center;
@@ -749,41 +681,7 @@
             cursor: pointer;
             border: 0;
         }
-    }    
-    .assortiment {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        &__column {
-            display: flex;
-            flex: 1;
-            margin: 15px 30px;
-        }
-        &__caption {
-            display: block;
-            font: 700 16px "Open Sans";
-            color: $lochmara;
-            line-height: 20px;
-            margin-bottom: 15px;
-        }
-        &__item {
-            display: flex;
-            font-size: 12px;
-            color: $black;
-            list-style-type: none;
-            line-height: 25px;
-            &:hover a {
-                text-decoration: underline;
-                color: $lochmara;
-            }
-            &:before {
-                content: "\203A";
-                font: 400 22px "Open Sans";
-                margin-right: 10px;
-                color: $lochmara;
-            }
-        }
-    }
+    } 
     .productblock {
         display: flex;
         justify-content: center;
