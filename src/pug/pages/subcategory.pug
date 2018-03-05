@@ -10,7 +10,8 @@ block .main
 		+b.row
 			+b.ASIDE.aside
 				+e.menuback НАЗАД
-				+e.UL.nav
+				+e.BUTTON(type='button' onclick="showHide('js-asidemenu')").btn#bar-btn                           
+				+e.UL.nav#js-asidemenu
 					+e.item 
 						+e.A.link(href='#') Мать и дитя
 						+e.B.caret
@@ -42,10 +43,16 @@ block .main
 				+b.button-group
 					+e.container
 						+e.show Показано товаров: 2 010
-					+b.sorting
+					+b.sorting#js-sorting
 						+e.container
 							+e.SPAN.name Сортировать по: 
 							+e.SPAN.position наименованию
+							+e.UL.sorting-hidden
+								+e.item популярности
+								+e.item алфавиту
+								+e.item новинки
+								+e.item лучшая цена
+								+e.item хит продаж
 				+b.product
 					+e.IMG.img(src='/images/1.png', alt='')
 					+e.stickernew Новинка
