@@ -1963,7 +1963,7 @@
         min-height: 110px;
         margin-left: -15px;
         margin-right: -15px;
-    }    
+    }   
     .menu {
         margin: 10px;
         &__top {
@@ -1982,6 +1982,23 @@
             color: $emperor;
             a {
                 color: $emperor;
+            }
+        }
+        &__btn.opened {
+            background: 0;
+            &:after {
+                top: 50%;
+                width: 28px;
+                -webkit-transform:translate(-2px,-50%) rotate(45deg);
+                -ms-transform:translate(-2px,-50%) rotate(45deg);
+                transform:translate(-2px,-50%) rotate(45deg)
+            }
+            &:before {
+                top: 50%;
+                width: 28px;
+                -webkit-transform:translate(-2px,-50%) rotate(-45deg);
+                -ms-transform:translate(-2px,-50%) rotate(-45deg);
+                transform:translate(-2px,-50%) rotate(-45deg)
             }
         }
         &__btn {
@@ -2619,7 +2636,7 @@
     
             }
         }
-    }  
+    }    
     .footer-row {
         display: flex;
         justify-content: space-between;

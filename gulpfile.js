@@ -17,7 +17,6 @@ gulp.task('serve', function() {
 gulp.task('jscommon', function() {
     return gulp.src('src/script/*.js')
       .pipe(gp.concat('libs.js'))
-      .pipe(gp.uglify({}))
       .pipe(gulp.dest('build/js/'))
       .pipe(browserSync.stream());
   });
