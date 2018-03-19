@@ -2,15 +2,15 @@ extends ../layouts/default.pug
 block .main
 	+b.SECTION
 		+b.home-slider
-			+b.js-swiper-container.home-slider__container
-				+b.swiper-wrapper.home-slider__wrapper
-					+b.swiper-slide.home-slider__slide
+			+b.js-swiper-container
+				+b.swiper-wrapper
+					+b.swiper-slide
 						+e.SPAN.item Уже 50 лет мы обеспечиваем бесперебойную работу медицинской техники
 						+e.IMG(src='/images/slide.jpg', alt='')
 					+b.swiper-slide.home-slider__slide
 						+e.IMG(src='/images/slide.jpg', alt='')
 	+b.SECTION
-		+b.js-swiper-pagination.home-slider__pagination
+		+b.js-swiper-pagination
 	
 	+b.SECTION.container.content
 		+e.H4.h4 Ассортимент нашей продукции
@@ -30,8 +30,52 @@ block .main
 				+e.SPAN.item 
 					+e.a(href='#') Лучшая цена
 			+b.productblock
-				for catalog in productList
-					+product(catalog)
+				+b.product
+					+e.IMG.img(src='/images/1.png', alt='')
+					+e.stickernew Новинка
+					+e.caption
+						+e.aparat Физиотерапевтические аппараты
+						+e.name 
+							+e.a(href='#') Электроды для дарсонвализации
+						+e.for Для аппаратов «Корона», «Карат», «Ультратек»
+					+e.priceblock
+						+e.price 1 500 Р					
+						+e.BUTTON(type='button').buy купить »
+				+b.product
+					+e.IMG.img(src='/images/2.png', alt='')
+					+e.stickerbest Лучшая цена
+					+e.caption
+						+e.aparat Тонометры Автоматические
+						+e.name 
+							+e.a(href='#') Тонометр автоматический с функцией диагностики аритмии Microlife BP A100
+						+e.for Для пенсионеров скидки!!!
+					+e.priceblock
+						+e.sale
+							+e.SPAN.oldprice 3 870 P
+							+e.SPAN.pricenew 1 500 Р
+							+e.BUTTON(type='button').buy купить »
+				+b.product
+					+e.IMG.img(src='/images/3.png', alt='')
+					+e.stickernew Новинка
+					+e.caption
+						+e.aparat Физиотерапевтические аппараты
+						+e.name 
+							+e.a(href='#') Концентратор кислородный 7F-1L
+						+e.for Для сеансов профилактической кислородотерапии, приготовления кислородных коктейлей
+					+e.priceblock
+						+e.price 1 500 Р
+						+e.BUTTON(type='button').buy купить »			
+				+b.product
+					+e.IMG.img(src='/images/1.png', alt='')
+					+e.stickerhit Хит продаж
+					+e.caption
+						+e.aparat Физиотерапевтические аппараты
+						+e.name 
+							+e.a(href='#') Электроды для дарсонвализации
+						+e.for Для аппаратов «Корона», «Карат», «Ультратек»
+					+e.priceblock
+						+e.price 1 500 Р
+						+e.BUTTON(type='button').buy купить »
 
 	+b.SECTION.container.content
 		+e.h2 Медицинская техника в Пензе и Пензенской области

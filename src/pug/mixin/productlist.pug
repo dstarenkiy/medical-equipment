@@ -1,0 +1,54 @@
+- 
+	var productList = [
+		{
+			productImg:"/images/1.png",
+			productCat:"Физиотерапевтические аппараты",
+			productName:"Электроды для дарсонвализации",
+			sticker:"Новинка",
+			productFor:"Для аппаратов «Корона», «Карат», «Ультратек»",
+			productPrice:"1 500 P", 
+			buttonBuy:"купить »"
+		},
+		{
+			productImg:"/images/2.png",
+			productCat:"Тонометры Автоматические",
+			productName:"Тонометр автоматический с функцией диагностики аритмии Microlife BP A100",
+			sticker:"Лучшая цена",
+			productFor:"Для пенсионеров скидки!!!",
+			productPrice:"1 500 P", 
+			buttonBuy:"купить »"
+		},
+		{
+			productImg:"/images/3.png",
+			productCat:"Физиотерапевтические аппараты",
+			productName:"Концентратор кислородный 7F-1L",
+			sticker:"Новинка",
+			productFor:"Для сеансов профилактической кислородотерапии, приготовления кислородных коктейлей",
+			productPrice:"1 500 P",
+			productPriceOld:"3 870 Р", 
+			buttonBuy:"купить »"
+		},
+		{
+			productImg:"/images/4.png",
+			productCat:"Тонометры Автоматические",
+			productName:"Тонометр автоматический с функцией диагностики аритмии Microlife BP A100",
+			sticker:"Хит продаж",
+			productFor:"ДАННЫЙ ТОВАР ИМЕЕТ РЕГИСТРАЦИОННОЕ УДОСТОВЕРЕНИЕ!",
+			productPrice:"цена не указана", 
+			buttonBuy:"купить »"
+		}
+		];
+mixin product(catalog)
+	+b.product
+		+e.IMG.img(src=catalog.productImg)
+		each sticker in catalog.sticker
+			+e.stickernew= catalog.sticker				
+		+e.caption
+			+e.aparat= catalog.productCat
+			+e.name 
+				+e.a(href='#')= catalog.productName
+			+e.for= catalog.productFor
+		+e.priceblock
+			+e.oldprice= catalog.productPriceOld
+			+e.price= catalog.productPrice
+			+e.A.buy(href='#')= catalog.buttonBuy

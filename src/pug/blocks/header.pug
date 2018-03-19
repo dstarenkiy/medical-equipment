@@ -6,19 +6,8 @@ header.header
                 +b.menu
                     +b.NAV
                         +e.BUTTON(type='button' onclick="showHide('js-block_id')").btn#js-bar-btn                          
-                        +e.UL.top#js-block_id
-                            +e.item
-                                +e.A(href='#') О компании
-                            +e.item
-                                +e.A(href='#') Услуги
-                            +e.item
-                                +e.A(href='#') Лицензия
-                            +e.item
-                                +e.A(href='#') Доставка
-                            +e.item
-                                +e.A(href='#') Контакты
-                            +e.item
-                                +e.A(href='#') Прокат              
+                        for catalog in catalogMenu
+                            +menu(catalog)          
                 +b.FORM.headerform
                     +e.INPUT.input(type='text', placeholder='Поиск по сайту')
                 +b.logincart
@@ -52,5 +41,4 @@ header.header
                         +e.weight Весы для новорожденных 
                             +e.SPAN.color (...)
                         +e.block
-                            +e.a(href='#')
-                                +e.button(type='button').inhire в прокат »
+                            +e.button(type='button').inhire в прокат »

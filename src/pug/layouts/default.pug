@@ -1,5 +1,6 @@
 include ../bemto/bemto.pug
-include ../mixin/mixins.pug
+include ../mixin/categorylist.pug
+include ../mixin/topmenu.pug
 doctype html
 html
 	include ../blocks/head.pug
@@ -9,5 +10,4 @@ html
 			block .main
 		include ../blocks/footer.pug
 		script(src='/js/libs.js')
-		script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js')
 		script(src='/js/catalog.js')

@@ -38,7 +38,7 @@ body {
 		text-align: center;
 		font: 300 36px "Open Sans";
 		color: $black;
-		padding: 50px 0 20px 0;
+		padding: 20px 0 20px 0;
 	}
 	&__p {
 		text-align: center;
@@ -96,6 +96,7 @@ body {
 		color: $black;
 	}
 	&__buy {
+		display: block;
 		font: 600 12px "Open Sans";
 		color: $white;
 		text-transform: uppercase;
@@ -161,7 +162,6 @@ body {
 }
 .interestoffers {
 	background: url(/images/pattern.png);
-	min-height: 850px;
 }
 .interest {
 	background: url(/images/pattern.png);

@@ -1,0 +1,12 @@
+-
+	var catalogMenu = [
+		{
+			item: ["О компании", "Услуги", "Лицензия", "Доставка", "Контакты", "Прокат"],
+			itemUrl: "#"
+		}		
+	]
+mixin menu(catalog)
+	+e.UL.top#js-block_id
+		each item in catalog.item
+			+e.item
+				+e.A(href=catalog.itemUrl)= item

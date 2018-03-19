@@ -1,0 +1,66 @@
+- 
+	var catalogList = [
+		{
+			title: "Массажные столы Vernam",
+			item: ["Складные массажные столы", "Аксессуары для массажа", "Стационарные массажные столы"],
+			catalogImg: "/images/massage.png",
+			catalogUrl: "#"
+		},
+		{
+			title: "Товары для дома",
+			btnMore: "",
+			item: ["Мать и дитя", "Тонометры", "Ингаляторы", "Коляски инвалидные", "Аппараты", "Тонометры", "Ингаляторы"],
+			catalogImg: "/images/home.png",
+			catalogUrl: "#"
+		},
+		{
+			title: "Для здоровья и красоты",
+			item: ["Аппараты прессотерапии", "Массаж", "Разное", "Фитнес", "Тренажеры"],
+			catalogImg: "/images/healthy.png",
+			catalogUrl: "#"
+		},
+		{
+			title: "Мебель медицинская",
+			btnMore: "",
+			item: ["Стулья и табуреты", "Шкафы медицинские", "Ширмы", "Кушетки, банкетки", "Штативы", "Кровати", "Стулья", "Табуреты"],
+			catalogImg: "/images/furniture.png",
+			catalogUrl: "#"
+		},
+		{
+			title: "Изделия медицинского назначения",
+			item: ["Марля, вата, бинты", "Одноразовая одежда", "Трубки, жгуты", "Перчатки", "Жгуты", "Разное"],
+			catalogImg: "/images/medicine.png",
+			catalogUrl: "#"
+		},
+		{
+			title: "Стерилизация, дезинфекция",
+			btnMore: "",
+			item: ["Емкости, лотки", "Облучатели бактерицидные", "Индикаторы, крафт-пакеты", "Стерилизаторы, камеры", "Коробки"],
+			catalogImg: "/images/str.png",
+			catalogUrl: "#"
+		},
+		{
+			title: "Урология, гинекология",
+			item: ["Инструментарий"],
+			catalogImg: "/images/urolog.png",
+			catalogUrl: "#"
+		},
+		{
+			title: "Хирургия",
+			btnMore: "",
+			item: ["Стулья и табуреты", "Шкафы медицинские", "Ширмы", "Кушетки, банкетки", "Штативы"],
+			catalogImg: "/images/urolog.png",
+			catalogUrl: "#"
+		}
+		];
+mixin assortiment(catalog)
+	+e.item.js-asortiment-catalog-items
+		+e.img
+			+e.IMG.image-block(src=catalog.catalogImg)
+		+e.content
+			+e.A.caption(href=catalog.catalogUrl)= catalog.title
+			+e.UL
+				each item in catalog.item
+					+e.li
+						+e.a(href=catalog.catalogUrl)= item
+			+b.A.showmore.js-showmore(href='#')= catalog.btnMore
