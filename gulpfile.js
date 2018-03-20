@@ -33,7 +33,7 @@ gulp.task('pug', function () {
     .pipe(gp.pug({})) 
     .pipe(gulp.dest('build/'))
     .pipe(browserSync.stream());
-});  
+});
 
 gulp.task('sass', function () {
     var processors = ([
@@ -73,7 +73,7 @@ gulp.task('img', function() {
   });
     
 gulp.task('watch', function () {
-    gulp.watch('src/sass/*.scss', gulp.series('sass'));
+    gulp.watch('src/sass/*.scss', gulp.series('sass'));        
     gulp.watch('src/pug/**/*.pug', gulp.series('pug'));   
     gulp.watch('src/script/*.js', gulp.series('jscommon'));
     gulp.watch('src/jquery/*.js', gulp.series('jquery'));

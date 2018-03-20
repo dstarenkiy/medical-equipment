@@ -1,9 +1,11 @@
 @import 'variables';
+* {
+	box-sizing: border-box;
+}
 body {
-	font: 400 16px "Open Sans";	
+	font: $base-weight $base-size + 4px "Open Sans";
 	line-height: 18px;
-	color: $black;	
-	font-size: $base-size;
+	color: $black;		
 }
 .header {
 	flex: 0 0 auto;
@@ -17,7 +19,7 @@ body {
 }
 .showmore {
 	margin-top: 10px;
-	font: 600 italic 12px "Open Sans";	 
+	font: $base-weight + 200 italic $base-size "Open Sans";	 
 	margin-left: 15px; 
 	white-space: nowrap; 
 	color: $lochmara; 
@@ -42,7 +44,7 @@ body {
 	}
 	&__p {
 		text-align: center;
-		font-size: 16px;
+		font-size: $base-size + 4px;
 		margin-bottom: 20px;
 		line-height: 20px;
 	}
@@ -61,7 +63,12 @@ body {
 		color: $black;
 	}
 }
-.product {
+.grid {
+	&__col-3 {
+		position: relative;	
+		padding: 15px;
+		background: white;		
+	}
 	&__aparat {
 		font-size: 12px;
 		color: $gray;
@@ -109,6 +116,50 @@ body {
 		margin-top: 20px;
 		border: 0;
 		cursor: pointer;	
+	}
+	text-align: center;	    
+	&__img {
+		height: 204px;
+		margin-bottom: 30px;
+	}
+	&__stickernew{
+		position: absolute;
+		top: 195px;
+		left: 0;
+		background: $sushi;
+		padding: 5px;
+		font: $base-weight + 200 $base-size - 3px "Open Sans";
+		color: $white;
+		z-index: 9999;
+	}
+	&__stickerbest {
+		position: absolute;
+		top: 195px;
+		left: 0;
+		background: $jaffa;
+		padding: 5px;
+		font: $base-weight + 200 $base-size - 3px "Open Sans";
+		color: $white;
+		z-index: 9999;
+	}
+	&__stickerhit {
+		position: absolute;
+		top: 195px;
+		left: 0;
+		background: $mediumpurple;
+		padding: 5px;
+		font: $base-weight + 200 $base-size - 3px "Open Sans";
+		color: $white;
+		z-index: 9999;
+	}
+	&__caption {
+		padding: 0 20px;
+		min-height: 220px;
+	}
+	&__for {
+		font-size: $base-size + 4px;
+		color: $black;
+		line-height: 20px;
 	}
 }
 .product-subcategory {
@@ -162,6 +213,7 @@ body {
 }
 .interestoffers {
 	background: url(/images/pattern.png);
+	padding-bottom: 20px;
 }
 .interest {
 	background: url(/images/pattern.png);

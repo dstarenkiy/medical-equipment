@@ -1,0 +1,19 @@
+@import 'node_modules/flexbox-grid-mixins/sass/flexbox-grid-mixins';
+
+$default-grid-gutter: 2%;
+ 
+@media (min-width: 1200px) {
+.grid {
+  @include grid($display: flex, $flex-wrap: nowrap, $gutter: $default-grid-gutter);
+
+  > .grid__col-2 {
+    @include grid-col($col: 2, $grid-columns: 12,$gutter: $default-grid-gutter);
+  }
+  > .grid__col-3 {
+    @include grid-col($grid-type: skeleton, $col: 3, $grid-columns: 12, $last-child: true, $gutter: $default-grid-gutter);
+    }   
+  > .grid__col-7 {
+    @include grid-col($col: 7, $gutter: $default-grid-gutter);
+    }
+    }
+}

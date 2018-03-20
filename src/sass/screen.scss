@@ -221,60 +221,7 @@
         display: flex;
         justify-content: space-between;
         margin-top: 15px;
-    }
-    .product {
-        position: relative;
-	    width: calc(33% - 30px);
-	    background: $white;
-	    text-align: center;
-	    padding: 10px 0 20px 0;
-        margin: 0 30px 30px 0;
-        border: 1px solid #e3e3e3;
-        box-shadow: 1.5px 2.6px 9px rgba(0,0,0,.09);
-        &__img {
-            height: 204px;
-            margin-bottom: 30px;
-        }
-        &__stickernew{
-	        position: absolute;
-	        top: 195px;
-	        left: 0;
-	        background: $sushi;
-	        padding: 5px;
-	        font: 600 9px "Open Sans";
-            color: $white;
-            z-index: 9999;
-        }
-        &__stickerbest {
-            position: absolute;
-	        top: 195px;
-	        left: 0;
-	        background: $jaffa;
-	        padding: 5px;
-	        font: 600 9px "Open Sans";
-            color: $white;
-            z-index: 9999;
-	    }
-        &__stickerhit {
-            position: absolute;
-	        top: 195px;
-	        left: 0;
-	        background: $mediumpurple;
-            padding: 5px;
-            font: 600 9px "Open Sans";
-            color: $white;
-            z-index: 9999;
-	    }
-        &__caption {
-            padding: 0 20px;
-            min-height: 220px;
-        }
-        &__for {
-            font-size: 16px;
-            color: $black;
-            line-height: 20px;
-        }
-    }
+    }    
     .product-subcategory {
         position: relative;
 	    width: calc(24% - 30px);
@@ -2055,7 +2002,6 @@
     }
     .headertop {
         background: $seashell;
-        overflow: hidden;
     }   
     .logincart {
         display: flex;

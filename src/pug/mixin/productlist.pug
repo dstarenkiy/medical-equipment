@@ -6,7 +6,8 @@
 			productName:"Электроды для дарсонвализации",
 			sticker:"Новинка",
 			productFor:"Для аппаратов «Корона», «Карат», «Ультратек»",
-			productPrice:"1 500 P", 
+			productPrice:"1 500 P",
+			clas: "stickernew",
 			buttonBuy:"купить »"
 		},
 		{
@@ -15,7 +16,8 @@
 			productName:"Тонометр автоматический с функцией диагностики аритмии Microlife BP A100",
 			sticker:"Лучшая цена",
 			productFor:"Для пенсионеров скидки!!!",
-			productPrice:"1 500 P", 
+			productPrice:"1 500 P",
+			clas: "stickerbest",
 			buttonBuy:"купить »"
 		},
 		{
@@ -25,7 +27,8 @@
 			sticker:"Новинка",
 			productFor:"Для сеансов профилактической кислородотерапии, приготовления кислородных коктейлей",
 			productPrice:"1 500 P",
-			productPriceOld:"3 870 Р", 
+			productPriceOld:"3 870 Р",
+			clas: "stickernew",
 			buttonBuy:"купить »"
 		},
 		{
@@ -34,21 +37,22 @@
 			productName:"Тонометр автоматический с функцией диагностики аритмии Microlife BP A100",
 			sticker:"Хит продаж",
 			productFor:"ДАННЫЙ ТОВАР ИМЕЕТ РЕГИСТРАЦИОННОЕ УДОСТОВЕРЕНИЕ!",
-			productPrice:"цена не указана", 
+			productPrice:"цена не указана",
+			clas: "stickerhit",
 			buttonBuy:"купить »"
 		}
 		];
 mixin product(catalog)
-	+b.product
+	+e.col-3
 		+e.IMG.img(src=catalog.productImg)
-		each sticker in catalog.sticker
-			+e.stickernew= catalog.sticker				
+		if catalog.sticker
+			+e.SPAN(class=catalog.clas)= catalog.sticker
 		+e.caption
 			+e.aparat= catalog.productCat
 			+e.name 
 				+e.a(href='#')= catalog.productName
 			+e.for= catalog.productFor
 		+e.priceblock
-			+e.oldprice= catalog.productPriceOld
-			+e.price= catalog.productPrice
+			+e.SPAN.oldprice= catalog.productPriceOld
+			+e.SPAN.price= catalog.productPrice
 			+e.A.buy(href='#')= catalog.buttonBuy
